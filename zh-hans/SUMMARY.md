@@ -32,7 +32,6 @@
 ## 其他
 
 * [其他功能](./part6/utils.md)
-* [参考文献](./part6/References.md)
 
 ## 参考文献
 
