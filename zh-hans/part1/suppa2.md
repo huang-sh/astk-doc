@@ -1,6 +1,6 @@
 # SUPPA2
 
-**ASTK** 中的可变剪切事件推断、PSI计算和差异可变剪切计算是基于SUPPA2{{"trincado_suppa2_2018Glasziou200"|cite}}算法原理发展而来。以下3个命令与SUPPA2中的命令同名，适合于单步分析计算。在大多数情况下，更推荐使用[dsflow](dsflow.html)
+**ASTK** 中的可变剪切事件推断、PSI计算和差异可变剪切计算是基于SUPPA2算法原理发展而来。以下3个命令与SUPPA2中的命令同名，适合于单步分析计算。在大多数情况下，更推荐使用[dsflow](dsflow.html)
 
 ## generateEvent
 
@@ -78,7 +78,3 @@ $ astk diffSplice -psi fb_SE_e11.psi fb_SE_e16.psi\
     -ref gencode.vM25_SE_strict.ioe \
     -o fb_SE_e10_e16.dpsi 
 ```
-
-{% references %}
-
-{% endreferences %}

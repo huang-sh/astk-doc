@@ -1,6 +1,6 @@
 # Moitf 分析
 
-对可变剪切位点侧翼序列进行motif分析， **ASTK** 会对所有剪切位点进行Motif分析。依赖于[meme-suite](https://meme-suite.org/) {{"mcleay_motif_2010"|cite}}实现。**ASTK** 内置了CIS-BP-RNA {{"ray_compendium_2013"|cite}}和 ATtRACT{{"giudice_attractdatabase_2016"|cite}} 两个RBP 数据库， 可直接使用这两个数据库。
+对可变剪切位点侧翼序列进行motif分析， **ASTK** 会对所有剪切位点进行Motif分析。依赖于[meme-suite](https://meme-suite.org/) 实现。**ASTK** 内置了CIS-BP-RNA 和 ATtRACT 两个RBP 数据库， 可直接使用这两个数据库。
 
 ## Motif富集分析
 
@@ -131,7 +131,3 @@ output/motif/fb_e11_p0_SE_mf
     ├── tomtom.tsv
     └── tomtom.xml
 ```
-
-{% references %}
-
-{% endreferences %}

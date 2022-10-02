@@ -9,8 +9,7 @@
         "code",
         "github",
         "splitter",
-        "search-plus",
-        "bibtex-indexed-cite"
+        "search-plus"
     ],
     "pluginsConfig": {
         "github": {
@@ -18,9 +17,6 @@
         },
         "code": {
             "copyButtons": true
-        },
-        "bibtex-indexed-cite": {
-            "path": "/"
-        }        
+        }
     }
 }

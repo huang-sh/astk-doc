@@ -2,7 +2,13 @@
 
 ## 过表达富集分析
 
-**enrich** 用于执行过表达富集分析，支持GO,GEKK, Reactome。基于clusterProfile{{"wu_clusterprofiler_2021"|cite}} 和 ReactomePA{{"yu_reactomepa_2016"|cite}}实现。此外也基于simplifyEnrichment{{"wu_clusterprofiler_2021"|cite}} 提供GO term富集结果聚类功能。
+**enrich** 用于执行过表达富集分析，支持GO,GEKK, Reactome。基于clusterProfile
+
+和 ReactomePA
+
+实现。此外也基于simplifyEnrichment
+
+提供GO term富集结果聚类功能。
 
 参数设置如下：
 
@@ -69,7 +75,7 @@ $ astk ecmp -i result/fb_e11_based/lenc/*/fb_e11_12_SE.sig.dpsi \
 
 ## NEASE
 
-**nease** 为基于可变exon的结构注释的网络富集分析, 基于NEASE{{"louadi_functional_2021"|cite}}发展而来。目前只支持人。
+**nease** 为基于可变exon的结构注释的网络富集分析, 基于NEASE发展而来。目前只支持人。
 
 参数设置如下：
 
@@ -89,7 +95,3 @@ astk nease -i result/ni_adj_ct/sig01/0_3_SE.sig.dpsi \
 ```
 
 ![nease.png](../../gitbook/images/nease.png)
-
-{% references %}
-
-{% endreferences %}

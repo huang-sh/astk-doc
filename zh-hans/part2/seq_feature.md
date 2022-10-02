@@ -2,7 +2,7 @@
 
 ## 剪切位点强度
 
-**ASTK**的剪切位点强度计算基于[MaxEntScan](http://hollywood.mit.edu/burgelab/maxent/download/fordownload/){{"yeo_maximum_nodate_2004"|cite}}的Perl脚本的重实现。
+**ASTK**的剪切位点强度计算基于[MaxEntScan](http://hollywood.mit.edu/burgelab/maxent/download/fordownload/)的Perl脚本的重实现。
 
 **spliceScore** 用于计算5'/3'剪切位点强度。**sss**是其别名。
 参数设置如下：
@@ -122,8 +122,3 @@ element_len.csv  element_len.png
 ```
 
 ![gcc.png](../../gitbook/images/element_len.png)
-
-
-{% references %}
-
-{% endreferences %}

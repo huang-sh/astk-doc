@@ -4,7 +4,7 @@
 
 ## signalProfile
 
-绘制剪切位点附近信号热图分布，使用{{"ramirez_deeptools2_2016"|cite}}进行绘制。
+绘制剪切位点附近信号热图分布，使用进行绘制。
 参数设置：
 
 * -o: 输出文件
@@ -59,7 +59,3 @@ $ astk sp2 -mat output/fb_16_AF_*_ATAC.mat.gz \
 ```
 
 ![AF_high.png](../../gitbook/images/AF_high_vs_low.png)
-
-{% references %}
-
-{% endreferences %}
