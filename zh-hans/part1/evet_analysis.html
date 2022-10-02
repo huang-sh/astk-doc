@@ -1,0 +1,551 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>AS事件分析 · ASTK-Doc</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="huangsh">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-bibtex-indexed-cite/style.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../part2/seq_feature.html" />
+    
+    
+    <link rel="prev" href="event_process.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Part 0</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../part0/Installation.html">
+            
+                <a href="../part0/Installation.html">
+            
+                    
+                    安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../part0/0_meta.html">
+            
+                <a href="../part0/0_meta.html">
+            
+                    
+                    准备
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part 1</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="suppa2.html">
+            
+                <a href="suppa2.html">
+            
+                    
+                    单步分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="dsflow.html">
+            
+                <a href="dsflow.html">
+            
+                    
+                    dsflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="event_process.html">
+            
+                <a href="event_process.html">
+            
+                    
+                    AS事件处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.4" data-path="evet_analysis.html">
+            
+                <a href="evet_analysis.html">
+            
+                    
+                    AS事件分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part 2</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../part2/seq_feature.html">
+            
+                <a href="../part2/seq_feature.html">
+            
+                    
+                    序列特征
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part 3</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../part3/enrichment.html">
+            
+                <a href="../part3/enrichment.html">
+            
+                    
+                    功能富集分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part 4</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../part4/motif.html">
+            
+                <a href="../part4/motif.html">
+            
+                    
+                    motif分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part 5</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../part5/epi.html">
+            
+                <a href="../part5/epi.html">
+            
+                    
+                    表观分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">其他1</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../part6/utils.html">
+            
+                <a href="../part6/utils.html">
+            
+                    
+                    其他功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../part6/References.html">
+            
+                <a href="../part6/References.html">
+            
+                    
+                    参考文献
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">参考文献</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../References.html">
+            
+                <a href="../References.html">
+            
+                    
+                    参考文献
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >AS事件分析</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x53EF;&#x53D8;&#x526A;&#x5207;&#x4E8B;&#x4EF6;&#x5206;&#x6790;">&#x53EF;&#x53D8;&#x526A;&#x5207;&#x4E8B;&#x4EF6;&#x5206;&#x6790;</h1>
+<h2 id="&#x4E8B;&#x4EF6;&#x5206;&#x5E03;">&#x4E8B;&#x4EF6;&#x5206;&#x5E03;</h2>
+<h3 id="barplot">barplot</h3>
+<p><strong>barplot</strong> &#x7528;&#x4E8E;&#x7ED8;&#x5236;&#x4E0D;&#x540C;&#x6761;&#x4EF6;&#x3001;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B;&#x7684;&#x53EF;&#x53D8;&#x526A;&#x5207;&#x6570;&#x76EE;&#x5206;&#x5E03;&#x3002;</p>
+<p>&#x8BE5;&#x547D;&#x4EE4;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>-i: &#x8F93;&#x5165;&#x6587;&#x4EF6;</li>
+<li>-o: &#x8F93;&#x51FA;&#x56FE;&#x7247;</li>
+<li>-dg: AS &#x4E8B;&#x4EF6;&#x5C06;&#x6839;&#x636E;dPSI&#x7684;&#x6B63;&#x65B9;&#x5212;&#x5206;&#x4E3A;&#x4E24;&#x7EC4; (group +: dPSI &gt; 0, group -: dPSI &lt; 0)</li>
+<li>-xl: x &#x8F74;&#x6807;&#x7B7E;</li>
+</ul>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-bash">astk barplot -i result/fb_e11_based/sig01/fb_e11_p0_*.sig.dpsi \
+    -o img/fb_e11_p0_bar.png -dg -xl A3 A5 AF AL MX RI SE
+</code></pre>
+<p><img src="../../gitbook/images/fb_e11_p0_bar.png" alt="fb_e11_p0_bar.png"></p>
+<h3 id="upset-plot">upset plot</h3>
+<p><strong>upset</strong> &#x7528;&#x4E8E;&#x7ED8;&#x5236;&#x53EF;&#x53D8;&#x526A;&#x5207;&#x4E8B;&#x4EF6;&#x7684;&#x5728;&#x4E0D;&#x540C;&#x7EC4;&#x7684;&#x4EA4;&#x96C6;&#x56FE;&#x3002;</p>
+<p>&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>-i: dpsi&#x6587;&#x4EF6;</li>
+<li>-o: &#x8F93;&#x51FA;&#x6587;&#x4EF6;</li>
+<li>-xl: x &#x8F74;&#x6807;&#x7B7E;</li>
+<li>-dg: AS &#x4E8B;&#x4EF6;&#x5C06;&#x6839;&#x636E;dPSI&#x7684;&#x6B63;&#x65B9;&#x5212;&#x5206;&#x4E3A;&#x4E24;&#x7EC4; (group +: dPSI &gt; 0, group -: dPSI &lt; 0)</li>
+</ul>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-bash">$ astk upset -i result/fb_e11_based/sig01/fb_e11_12_SE.sig.dpsi \
+    result/fb_e11_based/sig01/fb_e11_14_SE.sig.dpsi \
+    result/fb_e11_based/sig01/fb_e11_16_SE.sig.dpsi \
+    -o img/fb_upset.png -xl e11_12 e11_14 e11_16 -dg
+</code></pre>
+<p><img src="../../gitbook/images/fb_upset_dg.png" alt="fb_upset.png"></p>
+<h2 id="psidpsi-&#x5206;&#x6790;">PSI/dPSI &#x5206;&#x6790;</h2>
+<h3 id="pca">PCA</h3>
+<p><strong>pca</strong>&#x6839;&#x636E;PSI&#x503C;&#x6765;&#x7ED8;&#x5236;PCA&#x56FE;.</p>
+<p>&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>-i: psi&#x6587;&#x4EF6;</li>
+<li>-o: &#x8F93;&#x51FA;&#x56FE;&#x7247;&#x8DEF;&#x5F84;</li>
+<li>-fmt: &#x56FE;&#x7247;&#x683C;&#x5F0F;</li>
+<li>--width: &#x56FE;&#x7247;&#x957F;&#x5EA6;</li>
+<li>--height&#xFF1A;&#x56FE;&#x7247;&#x9AD8;&#x5EA6;</li>
+<li>-gn: &#x5206;&#x7EC4;&#x540D;</li>
+</ul>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-bash">$ astk pca -i result/fb_e11_based/psi/fb_e11_12_SE_c1.psi \
+    result/fb_e11_based/psi/fb_e11_1[2-6]_SE_c2.psi \
+    result/fb_e11_based/psi/fb_e11_p0_SE_c2.psi \
+    -o img/fb_pca.png -fmt png --width 6 --height 4 \
+    -gn fb_e11.5 fb_e12.5 fb_e13.5 fb_e14.5 fb_e15.5 fb_e16.5 fb_p0
+</code></pre>
+<p><img src="../../gitbook/images/fb_pca.png" alt="fb_pca.png"></p>
+<h3 id="heatmap-plot">heatmap plot</h3>
+<p><strong>heatmap</strong> &#x7528;&#x4E8E;&#x7ED8;&#x5236;PSI&#x70ED;&#x56FE;. <strong>hm</strong>&#x662F;<strong>heatmap</strong>&#x7684;&#x522B;&#x540D;.</p>
+<p>&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>-i: psi&#x6587;&#x4EF6;</li>
+<li>-o: &#x8F93;&#x51FA;&#x56FE;&#x7247;</li>
+<li>-fmt: &#x56FE;&#x7247;&#x683C;&#x5F0F;</li>
+</ul>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-bash">$ astk hm -i result/fb_e11_based/sig01/psi/fb_e11_12_SE_c1.sig.psi \
+    result/fb_e11_based/sig01/psi/fb_e11_1*_SE_c2.sig.psi \
+    -o img/fb_hm.png -fmt png
+</code></pre>
+<p><img src="../../gitbook/images/fb_hm.png" alt="fb_hm.png"></p>
+<h3 id="volcano-plot">volcano plot</h3>
+<p><strong>volcano</strong> &#x7528;&#x4E8E;&#x7ED8;&#x5236;dPSI&#x706B;&#x5C71;&#x56FE;&#x3002;  <strong>vol</strong>&#x662F;<strong>volcano</strong>&#x7684;&#x522B;&#x540D;</p>
+<p>&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x5982;&#x4E0B;:</p>
+<ul>
+<li>-i: dpsi&#x6587;&#x4EF6;</li>
+<li>-o: &#x8F93;&#x51FA;&#x6587;&#x4EF6;</li>
+</ul>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-bash">$ astk volcano -i result/fb_e11_based/dpsi/fb_e11_p0_SE.dpsi \
+    -o img/fb_e11_p0_SE.vol.png
+</code></pre>
+<p><img src="../../gitbook/images/fb_e11_p0_SE.vol.png" alt="volcano.png"></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="event_process.html" class="navigation navigation-prev " aria-label="Previous page: AS事件处理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../part2/seq_feature.html" class="navigation navigation-next " aria-label="Next page: 序列特征">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"AS事件分析","level":"2.4","depth":1,"next":{"title":"序列特征","level":"3.1","depth":1,"path":"part2/seq_feature.md","ref":"./part2/seq_feature.md","articles":[]},"previous":{"title":"AS事件处理","level":"2.3","depth":1,"path":"part1/event_process.md","ref":"./part1/event_process.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","code","github","splitter","search-plus","bibtex-indexed-cite"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/huang-sh/astk"},"splitter":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"bibtex-indexed-cite":{"path":"/"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"huangsh","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"bibCount":0,"variables":{},"title":"ASTK-Doc","language":"zh-hans","output.name":"site","bib":[{"citationKey":"TRINCADO_SUPPA2_2018","entryType":"ARTICLE","entryTags":{"MONTH":"March","ABSTRACT":"Despite the many approaches to study differential splicing from RNA-seq, many challenges remain unsolved, including computing capacity and sequencing depth requirements. Here we present SUPPA2, a new method that addresses these challenges, and enables streamlined analysis across multiple conditions taking into account biological variability. Using experimental and simulated data, we show that SUPPA2 achieves higher accuracy compared to other methods, especially at low sequencing depth and short read length. We use SUPPA2 to identify novel Transformer2-regulated exons, novel microexons induced during differentiation of bipolar neurons, and novel intron retention events during erythroblast differentiation.","PAGES":"40","ISSN":"1474-760X","NUMBER":"1","KEYWORDS":"Alternative splicing, Biological variability, Differential splicing, Differentiation, RNA-seq, Uncertainty","AUTHOR":"Trincado, Juan L. and Entizne, Juan C. and Hysenaj, Gerald and Singh, Babita and Skalic, Miha and Elliott, David J. and Eyras, Eduardo","URL":"https://doi.org/10.1186/s13059-018-1417-1","JOURNAL":"Genome Biology","TITLE":"{SUPPA2}: fast, accurate, and uncertainty-aware differential splicing analysis across multiple conditions","VOLUME":"19","FILE":"Full Text PDF:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\W5F9WY55\\\\Trincado 等。 - 2018 - SUPPA2 fast, accurate, and uncertainty-aware diff.pdf:application/pdf;Snapshot:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\DXIH3HYZ\\\\s13059-018-1417-1.html:text/html","SHORTTITLE":"{SUPPA2}","YEAR":"2018","URLDATE":"2021-08-12","DOI":"10.1186/s13059-018-1417-1"}},{"citationKey":"YEO_MAXIMUM_NODATE_2004","entryType":"ARTICLE","entryTags":{"TITLE":"Maximum {Entropy} {Modeling} of {Short} {Sequence} {Motifs} with {Applications} to {RNA} {Splicing} {Signals}","ABSTRACT":"We propose a framework for modeling sequence motifs based on the maximum entropy principle (MEP). We recommend approximating short sequence motif distributions with the maximum entropy distribution (MED) consistent with low-order marginal constraints estimated from available data, which may include dependencies between nonadjacent as well as adjacent positions. Many maximum entropy models (MEMs) are speciﬁed by simply changing the set of constraints. Such models can be utilized to discriminate between signals and decoys. Classiﬁcation performance using different MEMs gives insight into the relative importance of dependencies between different positions. We apply our framework to large datasets of RNA splicing signals. Our best models out-perform previous probabilistic models in the discrimination of human 5 (donor) and 3 (acceptor) splice sites from decoys. Finally, we discuss mechanistically motivated ways of comparing models.","LANGUAGE":"en","AUTHOR":"Yeo, Gene and Burge, Christopher B","PAGES":"18","YEAR":"2004","FILE":"Yeo and Burge - Maximum Entropy Modeling of Short Sequence Motifs .pdf:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\BPJ5VRGT\\\\Yeo and Burge - Maximum Entropy Modeling of Short Sequence Motifs .pdf:application/pdf"}},{"citationKey":"LOUADI_FUNCTIONAL_2021","entryType":"ARTICLE","entryTags":{"MONTH":"December","ABSTRACT":"Alternative splicing (AS) is an important aspect of gene regulation. Nevertheless, its role in molecular processes and pathobiology is far from understood. A roadblock is that tools for the functional analysis of AS-set events are lacking. To mitigate this, we developed NEASE, a tool integrating pathways with structural annotations of protein-protein interactions to functionally characterize AS events. We show in four application cases how NEASE can identify pathways contributing to tissue identity and cell type development, and how it highlights splicing-related biomarkers. With a unique view on AS, NEASE generates unique and meaningful biological insights complementary to classical pathways analysis.","PAGES":"327","ISSN":"1474-760X","NUMBER":"1","KEYWORDS":"Alternative splicing, Differential splicing, Dilated cardiomyopathy, Disease pathways, Functional enrichment, Multiple sclerosis, Platelet activation, Protein-protein interactions, Systems biology","AUTHOR":"Louadi, Zakaria and Elkjaer, Maria L. and Klug, Melissa and Lio, Chit Tong and Fenn, Amit and Illes, Zsolt and Bongiovanni, Dario and Baumbach, Jan and Kacprowski, Tim and List, Markus and Tsoy, Olga","URL":"https://doi.org/10.1186/s13059-021-02538-1","JOURNAL":"Genome Biology","TITLE":"Functional enrichment of alternative splicing events with {NEASE} reveals insights into tissue identity and diseases","VOLUME":"22","FILE":"Full Text PDF:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\IG3FBRYU\\\\Louadi 等。 - 2021 - Functional enrichment of alternative splicing even.pdf:application/pdf;Snapshot:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\XSZHKAKD\\\\s13059-021-02538-1.html:text/html","YEAR":"2021","URLDATE":"2022-02-18","DOI":"10.1186/s13059-021-02538-1"}},{"citationKey":"WU_CLUSTERPROFILER_2021","entryType":"ARTICLE","entryTags":{"MONTH":"August","ISSN":"2666-6758","NUMBER":"3","KEYWORDS":"biological knowledge mining, clusterProfiler, enrichment analysis, functional analysis, visualization","AUTHOR":"Wu, Tianzhi and Hu, Erqiang and Xu, Shuangbin and Chen, Meijun and Guo, Pingfan and Dai, Zehan and Feng, Tingze and Zhou, Lang and Tang, Wenli and Zhan, Li and Fu, Xiaocong and Liu, Shanshan and Bo, Xiaochen and Yu, Guangchuang","URL":"https://www.cell.com/the-innovation/abstract/S2666-6758(21)00066-7","NOTE":"Publisher: Elsevier","JOURNAL":"The Innovation","TITLE":"{clusterProfiler} 4.0: {A} universal enrichment tool for interpreting omics data","LANGUAGE":"English","VOLUME":"2","FILE":"Full Text PDF:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\EHSAUGLL\\\\Wu 等。 - 2021 - clusterProfiler 4.0 A universal enrichment tool f.pdf:application/pdf;Snapshot:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\PVI76IQU\\\\S2666-6758(21)00066-7.html:text/html","SHORTTITLE":"{clusterProfiler} 4.0","YEAR":"2021","URLDATE":"2021-11-03","DOI":"10.1016/j.xinn.2021.100141"}},{"citationKey":"YU_REACTOMEPA_2016","entryType":"ARTICLE","entryTags":{"ABSTRACT":"ReactomePA\n              is an R package providing functional analyses at the gene and sequence levels, with several visualization functions provided.\n            \n          , \n            \n              Reactome is a manually curated pathway annotation database for unveiling high-order biological pathways from high-throughput data.\n              ReactomePA\n              is an R/Bioconductor package providing enrichment analyses, including hypergeometric test and gene set enrichment analyses. A functional analysis can be applied to the genomic coordination obtained from a sequencing experiment to analyze the functional significance of genomic loci including\n              cis\n              -regulatory elements and non-coding regions. Comparison among different experiments is also supported. Moreover,\n              ReactomePA\n              provides several visualization functions to produce highly customizable, publication-quality figures. The source code and documents of\n              ReactomePA\n              are freely available through Bioconductor (http://www.bioconductor.org/packages/ReactomePA).","PAGES":"477--479","ISSN":"1742-206X, 1742-2051","NUMBER":"2","AUTHOR":"Yu, Guangchuang and He, Qing-Yu","URL":"http://xlink.rsc.org/?DOI=C5MB00663E","JOURNAL":"Molecular BioSystems","TITLE":"{ReactomePA}: an {R}/{Bioconductor} package for reactome pathway analysis and visualization","LANGUAGE":"en","VOLUME":"12","FILE":"Yu and He - 2016 - ReactomePA an RBioconductor package for reactome.pdf:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\D4AKPCK6\\\\Yu and He - 2016 - ReactomePA an RBioconductor package for reactome.pdf:application/pdf","SHORTTITLE":"{ReactomePA}","YEAR":"2016","URLDATE":"2022-09-20","DOI":"10.1039/C5MB00663E"}},{"citationKey":"GU_SIMPLIFYENRICHMENT_2021","entryType":"TECHREPORT","entryTags":{"MONTH":"April","ABSTRACT":"Functional enrichment analysis or gene set enrichment analysis is a basic bioinformatics method that evaluates biological importance of a list of genes of interest. However, it may produce a long list of significant terms with highly redundant information that is difficult to summarize. Current tools to simplify enrichment results by clustering them into groups either still produce redundancy between clusters or do not retain consistent term similarities within clusters. We propose a new method named binary cut for clustering similarity matrices of functional terms. Through comprehensive benchmarks on both simulated and real-world datasets, we demonstrated that binary cut can efficiently cluster functional terms into groups where terms showed more consistent similarities within groups and were more mutually exclusive between groups. We compared binary cut clustering on the similarity matrices obtained from different similarity measures and found that the semantic similarity worked well with binary cut while similarity matrices based on gene overlap showed less consistent patterns. We implemented the binary cut algorithm in the R package simplifyEnrichment which additionally provides functionalities for visualizing, summarizing and comparing the clusterings.","PAGES":"2020.10.27.312116","COPYRIGHT":"© 2021, Posted by Cold Spring Harbor Laboratory. This pre-print is available under a Creative Commons License (Attribution-NoDerivs 4.0 International), CC BY-ND 4.0, as described at http://creativecommons.org/licenses/by-nd/4.0/","AUTHOR":"Gu, Zuguang and Hübschmann, Daniel","URL":"https://www.biorxiv.org/content/10.1101/2020.10.27.312116v3","NOTE":"Company: Cold Spring Harbor Laboratory\nDistributor: Cold Spring Harbor Laboratory\nLabel: Cold Spring Harbor Laboratory\nSection: New Results\nType: article","TITLE":"{simplifyEnrichment}: an {R}/{Bioconductor} package for {Clustering} and {Visualizing} {Functional} {Enrichment} {Results}","LANGUAGE":"en","FILE":"Full Text PDF:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\J8LY5LDL\\\\Gu 和 Hübschmann - 2021 - simplifyEnrichment an RBioconductor package for .pdf:application/pdf;Snapshot:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\E67U7G7N\\\\2020.10.27.312116v3.html:text/html","SHORTTITLE":"{simplifyEnrichment}","YEAR":"2021","URLDATE":"2021-11-03","DOI":"10.1101/2020.10.27.312116"}},{"citationKey":"BAILEY_STREME_NODATE","entryType":"ARTICLE","entryTags":{"TITLE":"{STREME}: accurate and versatile sequence motif discovery","ABSTRACT":"Motivation: Sequence motif discovery algorithms can identify novel sequence patterns that perform biological functions in DNA, RNA and protein sequences—for example, the binding site motifs of DNA- and RNA-binding proteins. Results: The STREME algorithm presented here advances the state-of-the-art in ab initio motif discovery in terms of both accuracy and versatility. Using in vivo DNA (ChIP-seq) and RNA (CLIP-seq) data, and validating motifs with reference motifs derived from in vitro data, we show that STREME is more accurate, sensitive and thorough than several widely used algorithms (DREME, HOMER, MEME, Peak-motifs) and two other representative algorithms (ProSampler and Weeder). STREME’s capabilities include the ability to ﬁnd motifs in datasets with hundreds of thousands of sequences, to ﬁnd both short and long motifs (from 3 to 30 positions), to perform differential motif discovery in pairs of sequence datasets, and to ﬁnd motifs in sequences over virtually any alphabet (DNA, RNA, protein and user-deﬁned alphabets). Unlike most motif discovery algorithms, STREME reports a useful estimate of the statistical signiﬁcance of each motif it discovers. STREME is easy to use individually via its web server or via the command line, and is completely integrated with the widely used MEME Suite of sequence analysis tools. The name STREME stands for ‘Simple, Thorough, Rapid, Enriched Motif Elicitation’.","LANGUAGE":"en","AUTHOR":"Bailey, Timothy L","PAGES":"7","FILE":"Bailey - STREME accurate and versatile sequence motif disc.pdf:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\MHRFT87A\\\\Bailey - STREME accurate and versatile sequence motif disc.pdf:application/pdf"}},{"citationKey":"GRANT_FIMO_2011","entryType":"ARTICLE","entryTags":{"MONTH":"April","ABSTRACT":"Summary: A motif is a short DNA or protein sequence that contributes to the biological function of the sequence in which it resides. Over the past several decades, many computational methods have been described for identifying, characterizing and searching with sequence motifs. Critical to nearly any motif-based sequence analysis pipeline is the ability to scan a sequence database for occurrences of a given motif described by a position-specific frequency matrix.Results: We describe Find Individual Motif Occurrences (FIMO), a software tool for scanning DNA or protein sequences with motifs described as position-specific scoring matrices. The program computes a log-likelihood ratio score for each position in a given sequence database, uses established dynamic programming methods to convert this score to a P-value and then applies false discovery rate analysis to estimate a q-value for each position in the given sequence. FIMO provides output in a variety of formats, including HTML, XML and several Santa Cruz Genome Browser formats. The program is efficient, allowing for the scanning of DNA sequences at a rate of 3.5 Mb/s on a single CPU.Availability and Implementation: FIMO is part of the MEME Suite software toolkit. A web server and source code are available at http://meme.sdsc.edu.Contact:t.bailey@imb.uq.edu.au; t.bailey@imb.uq.edu.auSupplementary information:Supplementary data are available at Bioinformatics online.","PAGES":"1017--1018","ISSN":"1367-4803","NUMBER":"7","AUTHOR":"Grant, Charles E. and Bailey, Timothy L. and Noble, William Stafford","URL":"https://doi.org/10.1093/bioinformatics/btr064","JOURNAL":"Bioinformatics","TITLE":"{FIMO}: scanning for occurrences of a given motif","VOLUME":"27","FILE":"Full Text PDF:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\NI2N6FUG\\\\Grant 等。 - 2011 - FIMO scanning for occurrences of a given motif.pdf:application/pdf;Snapshot:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\YKVHKDP7\\\\232614.html:text/html","SHORTTITLE":"{FIMO}","YEAR":"2011","URLDATE":"2021-11-16","DOI":"10.1093/bioinformatics/btr064"}},{"citationKey":"RAY_COMPENDIUM_2013","entryType":"ARTICLE","entryTags":{"MONTH":"July","ABSTRACT":"RNA-binding proteins are key regulators of gene expression, yet only a small fraction have been functionally characterized. Here we report a systematic analysis of the RNA motifs recognized by RNA-binding proteins, encompassing 205 distinct genes from ...","PAGES":"172","NUMBER":"7457","AUTHOR":"Ray, Debashish and Kazan, Hilal and Cook, Kate B. and Weirauch, Matthew T. and Najafabadi, Hamed S. and Li, Xiao and Gueroussov, Serge and Albu, Mihai and Zheng, Hong and Yang, Ally and Na, Hong and Irimia, Manuel and Matzat, Leah H. and Dale, Ryan K. and Smith, Sarah A. and Yarosh, Christopher A. and Kelly, Seth M. and Nabet, Behnam and Mecenas, Desirea and Li, Weimin and Laishram, Rakesh S. and Qiao, Mei and Lipshitz, Howard D. and Piano, Fabio and Corbett, Anita H. and Carstens, Russ P. and Frey, Brendan J. and Anderson, Richard A. and Lynch, Kristen W. and Penalva, Luiz O. F. and Lei, Elissa P. and Fraser, Andrew G. and Blencowe, Benjamin J. and Morris, Quaid D. and Hughes, Timothy R.","URL":"https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC3929597/","NOTE":"Publisher: NIH Public Access","JOURNAL":"Nature","TITLE":"A compendium of {RNA}-binding motifs for decoding gene regulation","LANGUAGE":"en","PMID":"23846655","VOLUME":"499","FILE":"Snapshot:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\87WR3MA9\\\\PMC3929597.html:text/html;已接受版本:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\P9XMR326\\\\Ray 等。 - 2013 - A compendium of RNA-binding motifs for decoding ge.pdf:application/pdf","YEAR":"2013","URLDATE":"2022-02-18","DOI":"10.1038/nature12311"}},{"citationKey":"GIUDICE_ATTRACTDATABASE_2016","entryType":"ARTICLE","entryTags":{"ABSTRACT":"RNA-binding proteins (RBPs) play a crucial role in key cellular processes, including RNA transport, splicing, polyadenylation and stability. Understanding the interaction between RBPs and RNA is key to improve our knowledge of RNA processing, localization ...","AUTHOR":"Giudice, Girolamo and Sánchez-Cabo, Fátima and Torroja, Carlos and Lara-Pezzi, Enrique","URL":"https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC4823821/","NOTE":"Publisher: Oxford University Press","JOURNAL":"Database: The Journal of Biological Databases and Curation","TITLE":"{ATtRACT}—a database of {RNA}-binding proteins and associated motifs","LANGUAGE":"en","PMID":"27055826","VOLUME":"2016","FILE":"Snapshot:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\BRQYFACT\\\\PMC4823821.html:text/html;全文:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\TFBXJHWP\\\\Giudice 等。 - 2016 - ATtRACT—a database of RNA-binding proteins and ass.pdf:application/pdf","YEAR":"2016","URLDATE":"2022-02-18","DOI":"10.1093/database/baw035"}},{"citationKey":"MCLEAY_MOTIF_2010","entryType":"ARTICLE","entryTags":{"ABSTRACT":"A major goal of molecular biology is determining the mechanisms that control the transcription of genes. Motif Enrichment Analysis (MEA) seeks to determine which DNA-binding transcription factors control the transcription of a set of genes by detecting ...","PAGES":"165","AUTHOR":"McLeay, Robert C. and Bailey, Timothy L.","URL":"https://www.ncbi.nlm.nih.gov/labs/pmc/articles/PMC2868005/","NOTE":"Publisher: BioMed Central","JOURNAL":"BMC Bioinformatics","TITLE":"Motif {Enrichment} {Analysis}: a unified framework and an evaluation on {ChIP} data","LANGUAGE":"en","PMID":"20356413","VOLUME":"11","FILE":"Snapshot:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\MBGUGE9X\\\\PMC2868005.html:text/html;全文:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\TPLUSUWE\\\\McLeay 和 Bailey - 2010 - Motif Enrichment Analysis a unified framework and.pdf:application/pdf","SHORTTITLE":"Motif {Enrichment} {Analysis}","YEAR":"2010","URLDATE":"2022-02-18","DOI":"10.1186/1471-2105-11-165"}},{"citationKey":"RAMIREZ_DEEPTOOLS2_2016","entryType":"ARTICLE","entryTags":{"MONTH":"July","ABSTRACT":"We present an update to our Galaxy-based web server for processing and visualizing deeply sequenced data. Its core tool set, deepTools, allows users to perform complete bioinformatic workflows ranging from quality controls and normalizations of aligned reads to integrative analyses, including clustering and visualization approaches. Since we first described our deepTools Galaxy server in 2014, we have implemented new solutions for many requests from the community and our users. Here, we introduce significant enhancements and new tools to further improve data visualization and interpretation. deepTools continue to be open to all users and freely available as a web service at deeptools.ie-freiburg.mpg.de. The new deepTools2 suite can be easily deployed within any Galaxy framework via the toolshed repository, and we also provide source code for command line usage under Linux and Mac OS X. A public and documented API for access to deepTools functionality is also available.","PAGES":"W160--W165","ISSN":"0305-1048","NUMBER":"W1","AUTHOR":"Ramírez, Fidel and Ryan, Devon P and Grüning, Björn and Bhardwaj, Vivek and Kilpert, Fabian and Richter, Andreas S and Heyne, Steffen and Dündar, Friederike and Manke, Thomas","URL":"https://doi.org/10.1093/nar/gkw257","JOURNAL":"Nucleic Acids Research","TITLE":"{deepTools2}: a next generation web server for deep-sequencing data analysis","VOLUME":"44","FILE":"Full Text PDF:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\XSV9QCLI\\\\Ramírez et al. - 2016 - deepTools2 a next generation web server for deep-.pdf:application/pdf;Snapshot:C\\:\\\\Users\\\\huangsh\\\\Zotero\\\\storage\\\\BPDM6F53\\\\2499308.html:text/html","SHORTTITLE":"{deepTools2}","YEAR":"2016","URLDATE":"2022-09-09","DOI":"10.1093/nar/gkw257"}}],"gitbook":"*","description":"ASTK Documentation"},"file":{"path":"part1/evet_analysis.md","mtime":"2022-09-30T12:00:07.100Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-02T12:01:27.075Z"},"basePath":"..","book":{"language":"zh-hans"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

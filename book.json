@@ -1,0 +1,26 @@
+{
+    "title": "ASTK-Doc",
+    "description": "ASTK Documentation",
+    "author": "huangsh",
+    "output.name": "site",
+    "language": "en",
+    "plugins": [
+        "-search", 
+        "code",
+        "github",
+        "splitter",
+        "search-plus",
+        "bibtex-indexed-cite"
+    ],
+    "pluginsConfig": {
+        "github": {
+            "url": "https://github.com/huang-sh/astk"
+        },
+        "code": {
+            "copyButtons": true
+        },
+        "bibtex-indexed-cite": {
+            "path": "/"
+        }        
+    }
+}
