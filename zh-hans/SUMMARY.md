@@ -16,6 +16,7 @@
 ## Part 2
 
 * [序列特征](./part2/seq_feature.md)
+* [特征比较](./part2/cmp_feature.md)
 
 ## Part 3
 

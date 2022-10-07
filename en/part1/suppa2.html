@@ -1,0 +1,521 @@
+
+<!DOCTYPE HTML>
+<html lang="en" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>单步分析 · ASTK-Doc</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="huangsh">
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search-plus/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="dsflow.html" />
+    
+    
+    <link rel="prev" href="../part0/0_meta.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">Part 0</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../part0/Installation.html">
+            
+                <a href="../part0/Installation.html">
+            
+                    
+                    Installation
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../part0/0_meta.html">
+            
+                <a href="../part0/0_meta.html">
+            
+                    
+                    Preparation
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part 1</li>
+        
+        
+    
+        <li class="chapter active" data-level="2.1" data-path="suppa2.html">
+            
+                <a href="suppa2.html">
+            
+                    
+                    单步分析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="dsflow.html">
+            
+                <a href="dsflow.html">
+            
+                    
+                    dsflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="event_process.html">
+            
+                <a href="event_process.html">
+            
+                    
+                    AS events process
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="evet_analysis.html">
+            
+                <a href="evet_analysis.html">
+            
+                    
+                    AS event analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part 2</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../part2/seq_feature.html">
+            
+                <a href="../part2/seq_feature.html">
+            
+                    
+                    Sequence feature
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part 3</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../part3/enrichment.html">
+            
+                <a href="../part3/enrichment.html">
+            
+                    
+                    Function enrichment
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part 4</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../part4/motif.html">
+            
+                <a href="../part4/motif.html">
+            
+                    
+                    motif analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Part 5</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../part5/epi.html">
+            
+                <a href="../part5/epi.html">
+            
+                    
+                    Epigenetic analysis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Others</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../part6/utils.html">
+            
+                <a href="../part6/utils.html">
+            
+                    
+                    Useful utilities
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">References</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../References.html">
+            
+                <a href="../References.html">
+            
+                    
+                    References
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >单步分析</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div class="search-plus" id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="suppa2">SUPPA2</h1>
+<p><strong>ASTK</strong> &#x4E2D;&#x7684;&#x53EF;&#x53D8;&#x526A;&#x5207;&#x4E8B;&#x4EF6;&#x63A8;&#x65AD;&#x3001;PSI&#x8BA1;&#x7B97;&#x548C;&#x5DEE;&#x5F02;&#x53EF;&#x53D8;&#x526A;&#x5207;&#x8BA1;&#x7B97;&#x662F;&#x57FA;&#x4E8E;SUPPA2&#x7B97;&#x6CD5;&#x539F;&#x7406;&#x53D1;&#x5C55;&#x800C;&#x6765;&#x3002;&#x4EE5;&#x4E0B;3&#x4E2A;&#x547D;&#x4EE4;&#x4E0E;SUPPA2&#x4E2D;&#x7684;&#x547D;&#x4EE4;&#x540C;&#x540D;&#xFF0C;&#x9002;&#x5408;&#x4E8E;&#x5355;&#x6B65;&#x5206;&#x6790;&#x8BA1;&#x7B97;&#x3002;&#x5728;&#x5927;&#x591A;&#x6570;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x66F4;&#x63A8;&#x8350;&#x4F7F;&#x7528;<a href="dsflow.html">dsflow</a></p>
+<h2 id="generateevent">generateEvent</h2>
+<p><strong>generateEvent</strong> &#x662F;&#x57FA;&#x4E8E;&#x57FA;&#x56E0;&#x7EC4;&#x6CE8;&#x91CA;GTF&#x6587;&#x4EF6;&#x6765;&#x63A8;&#x65AD;&#x53EF;&#x53D8;&#x526A;&#x5207;&#x4E8B;&#x4EF6;&#x3002;</p>
+<p><strong>generateEvent</strong> &#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x5982;&#x4E0B;:</p>
+<ul>
+<li>-gtf: &#x57FA;&#x56E0;&#x7EC4;&#x6CE8;&#x91CA;GTF&#x6587;&#x4EF6;</li>
+<li>-et: &#x53EF;&#x53D8;&#x526A;&#x5207;&#x4E8B;&#x4EF6;&#x7C7B;&#x578B; [ALL|SE|A5|A3|MX|RI|AF|AL]</li>
+<li>--split&#xFF1A;&#x6839;&#x636E;AS&#x4E8B;&#x4EF6;&#x7684;&#x7EC4;&#x6210;&#x578B;exon&#x662F;&#x5426;&#x4E3A;&#x8F6C;&#x5F55;&#x672C;&#x7B2C;&#x4E00;&#x4E2A;&#x6216;&#x8005;&#x6700;&#x540E;&#x4E00;&#x4E2A;exon&#xFF0C;[inner|FTE|LTE]</li>
+<li>-o: output path</li>
+</ul>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-bash">$ astk generateEvent -gtf gencode.vM25.annotation.gtf  -et SE \
+    -o result/fb_e11_based/ref/gencode.vM25
+
+$ head gencode.vM25_SE_strict.ioe
+seqname gene_id event_id        alternative_transcripts total_transcripts
+chr1    ENSMUSG00000025900.13   ENSMUSG00000025900.13;SE:chr1:4293012-4311270:4311433-4351910:- ENSMUST00000208660.1    ENSMUST00000208660.1,ENSMUST00000208793.1
+chr1    ENSMUSG00000025902.13   ENSMUSG00000025902.13;SE:chr1:4492668-4493100:4493466-4493772:- ENSMUST00000027035.9    ENSMUST00000027035.9,ENSMUST00000192650.5,ENSMUST00000191647.1
+chr1    ENSMUSG00000025902.13   ENSMUSG00000025902.13;SE:chr1:4492668-4493100:4493490-4493772:- ENSMUST00000116652.7    ENSMUST00000116652.7,ENSMUST00000192650.5,ENSMUST00000191647.1
+</code></pre>
+<h2 id="psiperevent">psiPerEvent</h2>
+<p><strong>psiPerEvent</strong> &#x57FA;&#x4E8E;&#x8F6C;&#x5F55;&#x672C;TPM&#x503C;&#x6765;&#x8BA1;&#x7B97;&#x53EF;&#x53D8;&#x526A;&#x5207;&#x4E8B;&#x4EF6;&#x7684;PSI&#x503C;&#x3002;</p>
+<p>&#x547D;&#x4EE4;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>-o: output path</li>
+<li>-qf: &#x8F6C;&#x5F55;&#x672C;&#x5B9A;&#x91CF;&#x6587;&#x4EF6;</li>
+<li>-ioe: &#x53EF;&#x53D8;&#x526A;&#x5207;&#x4E8B;&#x4EF6;&#x53C2;&#x8003;ioe &#x6587;&#x4EF6;&#xFF0C;&#x7531;<strong>generateEvent</strong>&#x751F;&#x6210;</li>
+<li>--tpmThreshold&#xFF1A;&#x8F6C;&#x5F55;&#x672C;TPM&#x503C;&#x6700;&#x4F4E;&#x9608;&#x503C;</li>
+</ul>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-bash">$ astk psiPerEvent -o fb_SE_e10.psi \
+    -qf data/quant/fb_e10.5_rep*/quant.sf \
+    -ioe gencode.vM25_SE_strict.ioe
+
+
+$ head fb_SE_e10.psi
+event_id        fb_e10.5_rep1   fb_e10.5_rep2
+ENSMUSG00000025900.13;SE:chr1:4293012-4311270:4311433-4351910:- 1.0     1.0
+ENSMUSG00000025902.13;SE:chr1:4492668-4493100:4493466-4493772:- 0.50685587094156        0.49103663421745114
+ENSMUSG00000025902.13;SE:chr1:4492668-4493100:4493490-4493772:- 0.7405788514940302      0.697045848727448
+ENSMUSG00000025902.13;SE:chr1:4493863-4495136:4495942-4496291:- 0.20508467461294735     0.16355428896798765
+
+<span class="hljs-comment">## &#x8BE5;&#x547D;&#x4EE4;&#x4E5F;&#x4F1A;&#x4ECE;&#x8F6C;&#x8F6C;&#x5F55;&#x672C;&#x5B9A;&#x91CF;&#x6587;&#x4EF6;&#x4E2D;&#x63D0;&#x53D6;&#x8F6C;&#x5F55;&#x672C;TPM&#x6570;&#x636E;</span>
+$ head fb_SE_e10.tpm -n 3
+fb_e10.5_rep1   fb_e10.5_rep2
+ENSMUST00000193812.1    0.0     0.0
+ENSMUST00000082908.1    0.0     0.0
+</code></pre>
+<h2 id="diffsplice">diffSplice</h2>
+<p><strong>diffSplice</strong> &#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x5DEE;&#x5F02;&#x53EF;&#x53D8;&#x526A;&#x5207;&#x4E8B;&#x4EF6;&#x3002;
+&#x547D;&#x4EE4;&#x53C2;&#x6570;&#x8BBE;&#x7F6E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>-psi: PSI&#x6587;&#x4EF6;&#xFF0C;&#x91CD;&#x590D;&#x6837;&#x672C;PSI&#x503C;&#x9700;&#x8981;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5185;</li>
+<li>-exp: &#x8F6C;&#x5F55;&#x672C;TPM&#x6587;&#x4EF6;&#xFF0C;&#x91CD;&#x590D;&#x6837;&#x672C;TPM&#x503C;&#x9700;&#x8981;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x5185;</li>
+<li>-ref: ioe &#x53C2;&#x8003;&#x6587;&#x4EF6;</li>
+<li>-o: &#x8F93;&#x51FA;&#x6587;&#x4EF6;</li>
+<li>-m: &#x65B9;&#x6CD5;[empirical|classical]&#xFF0C;default=empirical</li>
+</ul>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-bash">$ astk diffSplice -psi fb_SE_e11.psi fb_SE_e16.psi\
+    -exp fb_SE_e11.tpm b_SE_e16.tpm\
+    -ref gencode.vM25_SE_strict.ioe \
+    -o fb_SE_e10_e16.dpsi
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../part0/0_meta.html" class="navigation navigation-prev " aria-label="Previous page: Preparation">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="dsflow.html" class="navigation navigation-next " aria-label="Next page: dsflow">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"单步分析","level":"2.1","depth":1,"next":{"title":"dsflow","level":"2.2","depth":1,"path":"part1/dsflow.md","ref":"./part1/dsflow.md","articles":[]},"previous":{"title":"Preparation","level":"1.3","depth":1,"path":"part0/0_meta.md","ref":"./part0/0_meta.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","code","github","splitter","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/huang-sh/astk"},"splitter":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"huangsh","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ASTK-Doc","language":"en","output.name":"site","gitbook":"*","description":"ASTK Documentation"},"file":{"path":"part1/suppa2.md","mtime":"2022-10-05T15:01:12.264Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-07T04:30:42.665Z"},"basePath":"..","book":{"language":"en"}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search-plus/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
