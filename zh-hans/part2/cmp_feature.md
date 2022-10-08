@@ -7,8 +7,7 @@
 
 - -e: AS 事件剪切位点强度文件， 由**sss**生成
 - -o：输出路径
-- -test： 统计检验方法，可选[Mann-Whitney|t-test_ind|t-test_welch|Wilcoxon]，默认'Mann-
-                                  Whitney'
+- -test： 统计检验方法，可选[Mann-Whitney|t-test_ind|t-test_welch|Wilcoxon]，默认Mann-Whitney
 - -gn： 组名 默认为 g1 g2
 - -ft: 图形展示类型 [point|strip|box|boxen|violin|bar]，默认box
 - -ff: 输出图片格式 [auto|png|pdf|tiff|jpeg]
@@ -36,3 +35,30 @@ A4_3SS_high vs. A4_3SS_low: Mann-Whitney-Wilcoxon test two-sided, P_val:4.759e-0
 
 输出图片
 ![fb_e16_AF_ssscmp.png](../../gitbook/images/fb_e16_AF_sss.png)
+
+## exon/intron 长度比较
+
+对两个条件下的exon/intron 长度进行统计性比较。该功能可用**elencmp**实现
+
+- -e: AS 事件剪切位点强度文件， 由**sss**生成
+- -o：输出路径
+- -test： 统计检验方法，可选[Mann-Whitney|t-test_ind|t-test_welch|Wilcoxon]，默认Mann-Whitney
+- -gn： 组名 默认为 g1 g2
+- -ft: 图形展示类型 [point|strip|box|boxen|violin|bar]，默认box
+- -ff: 输出图片格式 [auto|png|pdf|tiff|jpeg]
+- -facet: 分面展示
+- -log：数据进行log2转换
+- --xtitle：x轴标题
+- --ytitle: y轴标题
+- --xlabel: x轴 label
+
+示例：
+
+```bash
+astk elencmp -e Length/0hr_FT_se_*/element_len.csv \
+        -gn high low -o elencmp/FT_se_lencmp.png -ft box \
+        -log --xlabel ups_intron exon dws_intron --xtitle "element" --ytitle "log2(length)" \
+        >  elencmp/FT_se_len.txt
+```
+
+![fb_e16_AF_ssscmp.png](../../gitbook/images/FT_se_lencmp.png)

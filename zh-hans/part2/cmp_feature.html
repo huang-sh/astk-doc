@@ -395,8 +395,7 @@
 <ul>
 <li>-e: AS &#x4E8B;&#x4EF6;&#x526A;&#x5207;&#x4F4D;&#x70B9;&#x5F3A;&#x5EA6;&#x6587;&#x4EF6;&#xFF0C; &#x7531;<strong>sss</strong>&#x751F;&#x6210;</li>
 <li>-o&#xFF1A;&#x8F93;&#x51FA;&#x8DEF;&#x5F84;</li>
-<li>-test&#xFF1A; &#x7EDF;&#x8BA1;&#x68C0;&#x9A8C;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x9009;[Mann-Whitney|t-test_ind|t-test_welch|Wilcoxon]&#xFF0C;&#x9ED8;&#x8BA4;&apos;Mann-<pre><code>                            Whitney&apos;
-</code></pre></li>
+<li>-test&#xFF1A; &#x7EDF;&#x8BA1;&#x68C0;&#x9A8C;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x9009;[Mann-Whitney|t-test_ind|t-test_welch|Wilcoxon]&#xFF0C;&#x9ED8;&#x8BA4;Mann-Whitney</li>
 <li>-gn&#xFF1A; &#x7EC4;&#x540D; &#x9ED8;&#x8BA4;&#x4E3A; g1 g2</li>
 <li>-ft: &#x56FE;&#x5F62;&#x5C55;&#x793A;&#x7C7B;&#x578B; [point|strip|box|boxen|violin|bar]&#xFF0C;&#x9ED8;&#x8BA4;box</li>
 <li>-ff: &#x8F93;&#x51FA;&#x56FE;&#x7247;&#x683C;&#x5F0F; [auto|png|pdf|tiff|jpeg]</li>
@@ -421,6 +420,28 @@ A4_3SS_high vs. A4_3SS_low: Mann-Whitney-Wilcoxon <span class="hljs-built_in">te
 </code></pre>
 <p>&#x8F93;&#x51FA;&#x56FE;&#x7247;
 <img src="../../gitbook/images/fb_e16_AF_sss.png" alt="fb_e16_AF_ssscmp.png"></p>
+<h2 id="exonintron-&#x957F;&#x5EA6;&#x6BD4;&#x8F83;">exon/intron &#x957F;&#x5EA6;&#x6BD4;&#x8F83;</h2>
+<p>&#x5BF9;&#x4E24;&#x4E2A;&#x6761;&#x4EF6;&#x4E0B;&#x7684;exon/intron &#x957F;&#x5EA6;&#x8FDB;&#x884C;&#x7EDF;&#x8BA1;&#x6027;&#x6BD4;&#x8F83;&#x3002;&#x8BE5;&#x529F;&#x80FD;&#x53EF;&#x7528;<strong>elencmp</strong>&#x5B9E;&#x73B0;</p>
+<ul>
+<li>-e: AS &#x4E8B;&#x4EF6;&#x526A;&#x5207;&#x4F4D;&#x70B9;&#x5F3A;&#x5EA6;&#x6587;&#x4EF6;&#xFF0C; &#x7531;<strong>sss</strong>&#x751F;&#x6210;</li>
+<li>-o&#xFF1A;&#x8F93;&#x51FA;&#x8DEF;&#x5F84;</li>
+<li>-test&#xFF1A; &#x7EDF;&#x8BA1;&#x68C0;&#x9A8C;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x9009;[Mann-Whitney|t-test_ind|t-test_welch|Wilcoxon]&#xFF0C;&#x9ED8;&#x8BA4;Mann-Whitney</li>
+<li>-gn&#xFF1A; &#x7EC4;&#x540D; &#x9ED8;&#x8BA4;&#x4E3A; g1 g2</li>
+<li>-ft: &#x56FE;&#x5F62;&#x5C55;&#x793A;&#x7C7B;&#x578B; [point|strip|box|boxen|violin|bar]&#xFF0C;&#x9ED8;&#x8BA4;box</li>
+<li>-ff: &#x8F93;&#x51FA;&#x56FE;&#x7247;&#x683C;&#x5F0F; [auto|png|pdf|tiff|jpeg]</li>
+<li>-facet: &#x5206;&#x9762;&#x5C55;&#x793A;</li>
+<li>-log&#xFF1A;&#x6570;&#x636E;&#x8FDB;&#x884C;log2&#x8F6C;&#x6362;</li>
+<li>--xtitle&#xFF1A;x&#x8F74;&#x6807;&#x9898;</li>
+<li>--ytitle: y&#x8F74;&#x6807;&#x9898;</li>
+<li>--xlabel: x&#x8F74; label</li>
+</ul>
+<p>&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-bash">astk elencmp <span class="hljs-_">-e</span> Length/0hr_FT_se_*/element_len.csv \
+        -gn high low -o elencmp/FT_se_lencmp.png -ft box \
+        -log --xlabel ups_intron exon dws_intron --xtitle <span class="hljs-string">&quot;element&quot;</span> --ytitle <span class="hljs-string">&quot;log2(length)&quot;</span> \
+        &gt;  elencmp/FT_se_len.txt
+</code></pre>
+<p><img src="../../gitbook/images/FT_se_lencmp.png" alt="fb_e16_AF_ssscmp.png"></p>
 
                                 
                                 </section>
@@ -464,7 +485,7 @@ A4_3SS_high vs. A4_3SS_low: Mann-Whitney-Wilcoxon <span class="hljs-built_in">te
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"特征比较","level":"3.2","depth":1,"next":{"title":"功能富集分析","level":"4.1","depth":1,"path":"part3/enrichment.md","ref":"./part3/enrichment.md","articles":[]},"previous":{"title":"序列特征","level":"3.1","depth":1,"path":"part2/seq_feature.md","ref":"./part2/seq_feature.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","code","github","splitter","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/huang-sh/astk"},"splitter":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"huangsh","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ASTK-Doc","language":"en","output.name":"site","gitbook":"*","description":"ASTK Documentation"},"file":{"path":"part2/cmp_feature.md","mtime":"2022-10-07T04:30:19.858Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-07T04:30:42.665Z"},"basePath":"..","book":{"language":"zh-hans"}});
+            gitbook.page.hasChanged({"page":{"title":"特征比较","level":"3.2","depth":1,"next":{"title":"功能富集分析","level":"4.1","depth":1,"path":"part3/enrichment.md","ref":"./part3/enrichment.md","articles":[]},"previous":{"title":"序列特征","level":"3.1","depth":1,"path":"part2/seq_feature.md","ref":"./part2/seq_feature.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-search","code","github","splitter","search-plus"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"github":{"url":"https://github.com/huang-sh/astk"},"splitter":{},"lunr":{"ignoreSpecialCharacters":false,"maxIndexSize":1000000},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"search-plus":{}},"theme":"default","author":"huangsh","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"ASTK-Doc","language":"en","output.name":"site","gitbook":"*","description":"ASTK Documentation"},"file":{"path":"part2/cmp_feature.md","mtime":"2022-10-08T05:59:45.132Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-10-08T05:59:47.797Z"},"basePath":"..","book":{"language":"zh-hans"}});
         });
     </script>
 </div>
