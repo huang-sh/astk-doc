@@ -18,7 +18,6 @@ $ conda create -n astk -c bioconda bedtools meme -y
 从PyPi安装**astk**（当前不要使用该安装方式!）
 
 ```bash
-## install the development version from github
 $ pip install astk
 ```
 
