@@ -1,3 +1,3 @@
-# Headline
+# ASTK
 
-> An awesome project.
+Alternative splicing ToolKit

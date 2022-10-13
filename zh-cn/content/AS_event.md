@@ -37,7 +37,7 @@ dpsi  psi  ref  sig01  tpm
 
 ### 单步运行
 
-**ASTK** 中的可变剪切事件推断、PSI计算和差异可变剪切计算是基于SUPPA2算法原理发展而来。以下3个命令与SUPPA2中的命令同名，适合于单步分析计算。在大多数情况下，更推荐使用[dsflow](dsflow.html)
+**ASTK** 中的可变剪切事件推断、PSI计算和差异可变剪切计算是基于SUPPA2算法原理发展而来。以下3个命令与SUPPA2中的命令同名，适合于单步分析计算。在大多数情况下，更推荐使用[dsflow](zh-cn/content/AS_event?id=dsflow)
 
 #### generateEvent
 
@@ -172,7 +172,6 @@ $ ls result/fb_e11_based/lenc
 1-51  251-1001  51-251
 ```
 
-
 ## 可变剪切事件分析
 
 ### 事件分布
@@ -196,7 +195,8 @@ astk barplot -i result/fb_e11_based/sig01/fb_e11_p0_*.sig.dpsi \
 
 ```
 
-![fb_e11_p0_bar.png](../../gitbook/images/fb_e11_p0_bar.png)
+<img src='static/img/fb_e11_p0_bar.png' alt="fb_e11_p0_bar.png"></img>
+
 
 #### upset plot
 
@@ -219,7 +219,8 @@ $ astk upset -i result/fb_e11_based/sig01/fb_e11_12_SE.sig.dpsi \
 
 ```
 
-![fb_upset.png](../../gitbook/images/fb_upset_dg.png)
+<img src='static/img/fb_upset_dg.png' alt="fb_upset_dg.png"></img>
+
 
 ### PSI/dPSI 分析
 
@@ -247,7 +248,7 @@ $ astk pca -i result/fb_e11_based/psi/fb_e11_12_SE_c1.psi \
 
 ```
 
-![fb_pca.png](../../gitbook/images/fb_pca.png)
+<img src='static/img/fb_pca.png' alt="fb_pca.png"></img>
 
 #### heatmap plot
 
@@ -268,7 +269,8 @@ $ astk hm -i result/fb_e11_based/sig01/psi/fb_e11_12_SE_c1.sig.psi \
 
 ```
 
-![fb_hm.png](../../gitbook/images/fb_hm.png)
+<img src='static/img/fb_hm.png' alt="fb_hm.png"></img>
+
 
 #### volcano plot
 
@@ -287,4 +289,4 @@ $ astk volcano -i result/fb_e11_based/dpsi/fb_e11_p0_SE.dpsi \
 
 ```
 
-![volcano.png](../../gitbook/images/fb_e11_p0_SE.vol.png)
+<img src='static/img/fb_e11_p0_SE.vol.png' alt="fb_e11_p0_SE.vol.png"></img>

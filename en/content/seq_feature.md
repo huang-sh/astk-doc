@@ -45,7 +45,7 @@ $ tree sss/fb_p0_SE_high
 splice_scores.csv 为剪切位点强度的csv文件
 splice_scores_box.png剪切强度箱型图
 
-![splice_scores_box.png](../../gitbook/images/splice_scores_box.png)
+<img src='static/img/splice_scores_box.png' alt="splice_scores_box.png"></img>
 
 ### GC 含量
 
@@ -102,8 +102,7 @@ $ tree gcc/fb_p0_AF_high
 
 4 directories, 25 files  
 ```
-
-![gcc.png](../../gitbook/images/gcc.png)
+<img src='static/img/gcc.png' alt="gcc.png"></img>
 
 ### exon/intron 长度
 
@@ -123,8 +122,7 @@ $ ls len/fb_p0_A
 element_len.csv  element_len.png
 ```
 
-![gcc.png](../../gitbook/images/element_len.png)
-
+<img src='static/img/element_len.png' alt="element_len.png"></img>
 
 ## 序列特征比较
 
@@ -165,7 +163,8 @@ A4_3SS_high vs. A4_3SS_low: Mann-Whitney-Wilcoxon test two-sided, P_val:4.759e-0
 ```
 
 输出图片
-![fb_e16_AF_ssscmp.png](../../gitbook/images/fb_e16_AF_sss.png)
+
+<img src='static/img/fb_e16_AF_sss.png' alt="fb_e16_AF_sss.png"></img>
 
 ### exon/intron 长度比较
 
@@ -192,7 +191,7 @@ astk vcmp -e Length/0hr_FT_se_*/element_len.csv \
         --xtitle "element" --ytitle "log2(length)" >  vcmp/FT_se_len.txt
 ```
 
-![fb_e16_AF_ssscmp.png](../../gitbook/images/FT_se_lencmp.png)
+<img src='static/img/FT_se_lencmp.png' alt="FT_se_lencmp.png"></img>
 
 ### GC 含量比较
 
@@ -218,7 +217,7 @@ astk vcmp -e gcc/fb_p0_SE_*_b0/gcc.csv --facet \
          --xtitle "splic_site" --ytitle "GCC" 
 ```
 
-![p0_se_gcccmp.pn](../../gitbook/images/p0_se_gcccmp.png)
+<img src='static/img/p0_se_gcccmp.png' alt="p0_se_gcccmp.png"></img>
 
 <h2>参考文献</h2>
 <p>
