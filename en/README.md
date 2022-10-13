@@ -15,3 +15,5 @@ marks and chromatin signatures. ASTK was tested using experimental datasets to
 show its effectiveness and reliability. Together, ASTK will facilitate the
 functional characterization of AS events and improve our understanding of
 splicing regulation.
+
+<img src='static/img/workflow.png' alt="workflow.png"></img>
