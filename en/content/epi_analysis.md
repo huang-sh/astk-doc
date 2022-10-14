@@ -1,18 +1,19 @@
-# 表观分析
+# Epigenetic signal analysis
 
-该模块主要用于描述剪切位点附近区域表观信号分布。
+**ASTK** implement the module for profiling splicing sites epigenetic signal of AS events.
 
-## signalProfile
+## heatmap profile
 
-绘制剪切位点附近信号热图分布，使用进行绘制。
-参数设置：
+**signalProfile** characterizes the epigenetic signal distribution of splice sites in heatmap manner.
 
-* -o: 输出文件
-* -e: 事件文件
-* -bw: bigwig文件
-* -ssl: 剪切位点标签
+Arguments:
 
-示例
+* -e: AS event file
+* -o: output path
+* -bw: bigwig file
+* -ssl: splicing site labels
+
+code:
 
 ```bash
 $ astk pf -i result/fb_e11_based/psi/fb_e11_16_AF_case.psi \
@@ -33,24 +34,24 @@ $ astk signalProfile -o output/fb_16_AF_low_ATAC.png \
 ```
 
 fb_16_AF_high_ATAC.png
-<img src='static/img/AF_high.png' alt="AF_high.png"></img>
+`<img src='static/img/AF_high.png' alt="AF_high.png"></img>`
 
 fb_16_AF_low_ATAC.png
-<img src='static/img/AF_low.png' alt="AF_low.png"></img>
+`<img src='static/img/AF_low.png' alt="AF_low.png"></img>`
 
-## sp2
+## Profile comparison
 
-用于两组信号比较
+**sp2** sub-command is used for signal distribution comparison between the two condition.
 
-参数设置
+Arguments:
 
-* -mat: 由**signalProfile** 生成的*.mat.gz文件
-* -o: 输出文件
-* -gn: 组名
-* --width: 图宽
-* --height: 图高
+* -mat: the output of **signalProfile**
+* -o: output path
+* -gn: group names
+* --width: figure width
+* --height: figure height
 
-示例
+code
 
 ```bash
 
