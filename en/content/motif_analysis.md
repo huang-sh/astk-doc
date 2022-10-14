@@ -1,20 +1,21 @@
-# Moitf 分析
+# Moitf analysis
 
-对可变剪切位点侧翼序列进行motif分析， **ASTK** 会对所有剪切位点进行Motif分析。依赖于[meme-suite](https://meme-suite.org/) ((McLeay and Bailey, 2010; Bailey; Gupta et al., 2007;(Grant et al., 2011)实现。**ASTK** 内置了CIS-BP-RNA 和 ATtRACT (Ray et al., 2013; Giudice et al., 2016) 两个RBP 数据库， 可直接使用这两个数据库。
+In the module, **ASTK** implements RBP motif analysis using [meme-suite](https://meme-suite.org/) ((McLeay and Bailey, 2010; Bailey; Gupta et al., 2007;(Grant et al., 2011). **ASTK** collects RBP motifs from CIS-BP-RNA and ATtRACT database(Ray et al., 2013; Giudice et al., 2016) as ASTK built-in motif resources.
 
-## Motif富集分析
+## Motif enrichment
 
-Motif富集分析可用于查看不同条件下RBP结合亲和力差异。**ASTK** 使用子命令**motifEnrich**来实现，**me**是别名。
-参数设置如下：
+We implement **motifEnrich** sub-command to perform motif enrichment analysis for checking RBP binding affinity difference within different condition and splicing sites flank sequences. **me** is the short alias.
 
-* -te: 处理组可变剪切事件
-* -ce：对照组可变剪切事件
-* -od： 输出目录
-* -db： RBP motif数据库[ATtRACT|CISBP-RNA]
-* -org: 物种
-* -fi: 基因组fasta序列
+Arguments:
 
-示例
+* -te: treatment AS events
+* -ce：control AS events
+* -od：output dirctory
+* -db： RBP motif database [ATtRACT|CISBP-RNA]
+* -org: organism, 'hs' for human, 'mm' for mouse
+* -fi: genome fasta
+
+code:
 
 ```bash
 $ mkdir output/motif
@@ -64,17 +65,18 @@ motif/fb_e11_p0_SE_me
 └── heatmap.pdf
 ```
 
-## Motif发现
+## Motif discovery
 
-**ASTK** 使用子命令**motifFind**来实现motif的发现和与已知RBP motif进行比对，**mf**是别名。
-参数设置如下：
+**motifFind** could perform motif discovery and compare motifs against a database of known motifs. **mf** is the short alias.
 
-* -te: 处理组可变剪切事件
-* -ce：对照组可变剪切事件
-* -od： 输出目录
-* -db： RBP motif数据库[ATtRACT|CISBP-RNA]
-* -org: 物种
-* -fi: 基因组fasta序列
+Arguments:
+
+* -te: treatment AS events
+* -ce：control AS events
+* -od：output dirctory
+* -db： RBP motif database [ATtRACT|CISBP-RNA]
+* -org: organism, 'hs' for human, 'mm' for mouse
+* -fi: genome fasta
 * -pval: p-value
 
 ```bash
@@ -132,7 +134,7 @@ output/motif/fb_e11_p0_SE_mf
     └── tomtom.xml
 ```
 
-<h2>参考文献</h2>
+<h2>References</h2>
 <p>
 Giudice,G. et al. (2016) ATtRACT—a database of RNA-binding proteins and associated motifs. Database: The Journal of Biological Databases and Curation, 2016.
 </p>

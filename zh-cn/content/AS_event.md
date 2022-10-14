@@ -21,7 +21,7 @@
 ```bash
 $ mkdir result
 $ astk dsflow -od result/fb_e11_based -md metadata/fb_e11_based.json \
-    -gtf gencode.vM25.annotation.gtf -t ALL &
+    -gtf gencode.vM25.annotation.gtf -et ALL &
 
 $ ls result/fb_e11_based
 dpsi  psi  ref  sig01  tpm
@@ -197,7 +197,6 @@ astk barplot -i result/fb_e11_based/sig01/fb_e11_p0_*.sig.dpsi \
 
 <img src='static/img/fb_e11_p0_bar.png' alt="fb_e11_p0_bar.png"></img>
 
-
 #### upset plot
 
 **upset** 用于绘制可变剪切事件的在不同组的交集图。
@@ -220,7 +219,6 @@ $ astk upset -i result/fb_e11_based/sig01/fb_e11_12_SE.sig.dpsi \
 ```
 
 <img src='static/img/fb_upset_dg.png' alt="fb_upset_dg.png"></img>
-
 
 ### PSI/dPSI 分析
 
@@ -270,7 +268,6 @@ $ astk hm -i result/fb_e11_based/sig01/psi/fb_e11_12_SE_c1.sig.psi \
 ```
 
 <img src='static/img/fb_hm.png' alt="fb_hm.png"></img>
-
 
 #### volcano plot
 

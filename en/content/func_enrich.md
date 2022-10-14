@@ -1,23 +1,22 @@
-# 功能富集分析
+# Function enrichment
 
-## 过表达富集分析
+## Over-representation analysis
 
-**enrich** 用于执行过表达富集分析，支持GO,GEKK, Reactome。基于clusterProfile (Wu et al., 2021) 和 ReactomePA (Yu and He, 2016) 实现。此外也基于simplifyEnrichment (Gu and Hübschmann, 2021) 提供GO term富集结果聚类功能。
+**enrich** performs over-representation analysis for gene sets function exploration using GO, KEGG, Reactome based on clusterProfile (Wu et al., 2021) and ReactomePA (Yu and He, 2016). In addition, it could simplify GO terms enrichment results using simplifyEnrichment (Gu and Hübschmann, 2021).
 
+Arguments:
 
-参数设置如下：
-
-* -i: 输入文件
-* -od: 输出目录
-* -db： 数据库 [GO|KEGG|Reactome]
+* -i: input
+* -od: output directory
+* -db： database [GO|KEGG|Reactome]
 * -ont:  GO ontology [ALL|BP|CC|MF]
 * -pval : p-value
 * -qval : q-value
-* -org : 物种, ‘hs’ for human, ‘mm’ for mouse
-* --simple: 简化GO富集结果
-* -gene_id： gene ID 类型
+* -org:  organism, 'hs' for human, 'mm' for mouse
+* --simple: simplify the GO enrichment result
+* -gene_id： gene ID type
 
-示例
+code:
 
 ```bash
 $ mkdir output/enrich -p
@@ -37,27 +36,28 @@ img/enrich/fb_e11_13_SE_doc_sc
 
 ```
 
-GO.BP.qval0.1_pval0.1.csv 是文本形式的富集结果， GO.BP.qval0.1_pval0.1.png为图片
-<img src='static/img/GO.BP.qval0.1_pval0.1.png' alt="GO.BP.qval0.1_pval0.1.png"></img>
+In the output, *.csv files store the results as text, and *png files display the content as images.
 
-GO_BP_simple.csv 为GO terms 简化聚类结果，GO_BP_simple.png 为图片
-<img src='static/img/GO_BP_simple.png' alt="GO_BP_simple.png"></img>
+`<img src='static/img/GO.BP.qval0.1_pval0.1.png' alt="GO.BP.qval0.1_pval0.1.png"></img>`
 
-## 功能富集比较
+`<img src='static/img/GO_BP_simple.png' alt="GO_BP_simple.png"></img>`
 
-**enrichCompare** 用于不同组功能富集结果比较 。**ecmp** 为别名。
-参数设置如下：
+## Enrichment comparison
 
-* -i: 多个输入文件
-* -od: 输出目录
-* -db： 数据库 [GO|KEGG|Reactome]
+**enrichCompare** is used for comparing functional profiles among different experiments. **ecmp**  is the short alias.
+
+Arguments:
+
+* -i: input files
+* -od: output directory
+* -db: database [GO|KEGG|Reactome]
 * -ont:  GO ontology [ALL|BP|CC|MF]
-* -pval : p-value
-* -qval : q-value
-* -org : 物种, ‘hs’ for human, ‘mm’ for mouse
-* -gene_id： gene ID 类型
+* -pval: p-value
+* -qval q-value
+* -org organism, 'hs' for human, 'mm' for mouse
+* -gene_id： gene ID type
 
-示例
+code
 
 ```bash
 $ astk ecmp -i result/fb_e11_based/lenc/*/fb_e11_12_SE.sig.dpsi \
@@ -69,17 +69,17 @@ $ astk ecmp -i result/fb_e11_based/lenc/*/fb_e11_12_SE.sig.dpsi \
 
 ## NEASE
 
-**nease** 为基于可变exon的结构注释的网络富集分析, 基于NEASE (Louadi et al., 2021) 发展而来。目前只支持人。
+**nease** functionally characterizes AS events by integrating pathways with structural annotations of proteinprotein interactions(Louadi et al., 2021). Currently, it only supports Human.
 
-参数设置如下：
+Arguments:
 
 * -i: dpsi file
 * -od : output directory
 * -pval : p-value
-* -org : 只能设置为Human
-* -db: NEASE 支持数据库,[PharmGKB|HumanCyc|Wikipathways|Reactome|KEGG|SMPDB|Signalink|NetPath|EHMN|INOH|BioCarta|PID]
+* -org: only Human
+* -db: database, [PharmGKB|HumanCyc|Wikipathways|Reactome|KEGG|SMPDB|Signalink|NetPath|EHMN|INOH|BioCarta|PID]
 
-示例：
+code:
 
 ```bash
 mkdir output/nease
@@ -90,8 +90,7 @@ astk nease -i result/ni_adj_ct/sig01/0_3_SE.sig.dpsi \
 
 <img src='static/img/nease.png' alt="nease.png"></img>
 
-
-<h2>参考文献</h2>
+<h2>References</h2>
 <p>
 Wu,T. et al. (2021) clusterProfiler 4.0: A universal enrichment tool for interpreting omics data. The Innovation, 2.
 </p>

@@ -1,21 +1,22 @@
-# 快速开始
+# Quick start
 
-## 数据准备
+## Data preparation
 
-**astk** 的输入为转录本的TPM定量文件。转录本的TPM定量文件可以通过salmon获取. 参考[教程](https://combine-lab.github.io/alevin-tutorial/2019/selective-alignment/)
+**ASTK** requires transcript TPM quantification files as input. And [salmon](https://github.com/COMBINE-lab/salmon) could produce a highly-accurate, transcript-level quantification estimates from RNA-seq data.
 
-示例代码：
+code:
 
 ```bash
+# refer to https://combine-lab.github.io/alevin-tutorial/2019/selective-alignment/
 $ salmon index -t gentrome.fa.gz -d decoys.txt -p 12 -i salmon_index --gencode
 $ salmon quant -i salmon_index --gcBias --useVBOpt --seqBias  -r ENCFF329ACL.fastq.gz --validateMappings -o fb_e11.5_rep1 -p 30
 $ ls fb_e11.5_rep1
 aux_info  cmd_info.json  lib_format_counts.json  libParams  logs  quant.sf
 ```
 
-> 注： 对于来自GENCODE的数据 --gencode 必须加上
+> --gencode is required for GENCODE reference data
 
-假设我们已经定量好了以下数据：
+The following is the quantification result:
 
 ```bash
 $ ll  data/quant | cut -d " " -f 5-
@@ -35,21 +36,21 @@ $ ll  data/quant | cut -d " " -f 5-
 146 Oct 30  2021 fb_p0_rep2
 ```
 
-## 差异分析元数据
+## Metadata
 
-**meta** 是一个用于为差异可变剪切分析生成对照组和处理组的对照信息表格的一个子命令。
+**meta** is used to generate a metadata table for pairwise comparison of multiple groups.
 
-**meta** 参数设置如下：
+Arguments:
 
-* -o:  输出文件地址
-* -repN: 各组的重复样本数目
-* -c1: condition 1(ctrl) 样本转录本定量文件路径
-* -c2: condition 2(case) 样本转录本定量文件路径
-* -gn: 对照组名设置
+* -o: output path
+* -repN: replicate number
+* -c1: condition 1(ctrl) sample transcript quantification files
+* -c2: condition 2(case) sample transcript quantification files
+* -gn: group names
 
-### 例1
+### example 1
 
-如果我们要生成以fb_e11.5 为控制组， 其他阶段数据为处理组，进行差异可变剪切分析，可以这样运行命令：
+If we want to perform AS differential splicing analysis with fb_e11.5 as the control group and other stage data as the treatment group, we can run the command like:
 
 ```bash
 $ mkdir metadata -p
@@ -60,13 +61,13 @@ $ astk meta -o metadata/fb_e11_based -repN 2 \
 
 ```
 
-输出为一个CSV文件和JSON文件，CSV文件便于查看， JSON文件用于后续分析。
+The output are a CSV file and a JSON file, where the CSV file is easy to view and the JSON file is used for subsequent analysis.
 
-<img src='static/img/fb_e11.png'></img>
+`<img src='static/img/fb_e11.png'></img>`
 
-### 例2
+### example 2
 
-如果我们要生成以相邻阶段分别为控制组和处理组，进行差异可变剪切分析，可以这样运行命令：
+If we want to perform AS differential splicing analysis with adjacent stages as the control group and the treatment group, we can run the command like:
 
 ```bash
 $ mkdir metadata -p
@@ -77,39 +78,37 @@ $ astk meta -o metadata/fb_adj_based -repN 2 \
 
 ```
 
-<img src='static/img/fb_adj.png'></img>
-
+`<img src='static/img/fb_adj.png'></img>`
 
 ## dsflow
 
-**dsflow** 提供了可变剪切事件推断、可变剪切事件PSI计算、差异可变剪切分析和显著结果筛选。同时，该命令可以对多组对照组进行分析。
+v**dsflow** is wrapper of AS events inferring, PSI calculation,  differential splicing analysis and significants differential result selection.
 
-命令参数设置如下：
+Arguments：
 
-* -od: 输出目录
-* -md: metadata json文件， 由命令**meta**生成
-* -gtf: 基因组注释GTF文件
-* -et: 可变剪切事件类型[ALL|SE|A5|A3|MX|RI|AF|AL]
-* -m: 差异AS计算方法， [empirical|classical]
-* -p：显著性AS事件p-val 阈值
-* -adpsi: 显著性AS事件 dPSI 绝对阈值
+* -od: output dirctory
+* -md: metadata json, the output of **meta**
+* -gtf: genome annotation GTF file
+* -et: AS event type [ALL|SE|A5|A3|MX|RI|AF|AL]
+* -m: the method used to differential splicing computation [empirical|classical]
+* -p：p-value threshold
+* -adpsi: absolute dPSI threshold
 
-示例：
+code：
 
 ```bash
 $ mkdir result
 $ astk dsflow -od result/fb_e11_based -md metadata/fb_e11_based.json \
-    -gtf gencode.vM25.annotation.gtf -t ALL &
+    -gtf gencode.vM25.annotation.gtf -et ALL &
 
 $ ls result/fb_e11_based
 dpsi  psi  ref  sig01  tpm
 ```
 
-输出目录包含四个文件夹：
+output contains 4 directories:
 
-* ref 用于存放可变剪切事件ioe参考文件
-* tpm 用于存放转录本TPM 文件
-* psi 用于存放可变剪切事件PSI文件
-* dpsi 用于存放可变剪切事件dPSI文件
-* sig01 用于存放统计显著性得差异可变剪切事件
-  
+* ref is used to save AS events references files
+* tpm is used to save transcript TPM files
+* psi is used to save AS event PSI files
+* dpsi is used to save AS event dPSI files
+* sig01 is used to save significants differential result
