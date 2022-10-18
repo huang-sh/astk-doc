@@ -9,3 +9,4 @@
 - [Motif analysis](en/content/motif_analysis.md)
 - [epigenetic analysis](en/content/epi_analysis.md)
 - [References](en/content/references.md)
+- [Appendix](en/content/appendix.md)
