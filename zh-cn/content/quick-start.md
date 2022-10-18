@@ -62,7 +62,7 @@ $ astk meta -o metadata/fb_e11_based -repN 2 \
 
 输出为一个CSV文件和JSON文件，CSV文件便于查看， JSON文件用于后续分析。
 
-`<img src='static/img/fb_e11.png'></img>`
+<img src='static/img/fb_e11.png'></img>
 
 ### 例2
 
@@ -77,7 +77,7 @@ $ astk meta -o metadata/fb_adj_based -repN 2 \
 
 ```
 
-`<img src='static/img/fb_adj.png'></img>`
+<img src='static/img/fb_adj.png'></img>
 
 ## dsflow
 

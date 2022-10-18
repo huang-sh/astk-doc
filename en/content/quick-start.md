@@ -63,7 +63,7 @@ $ astk meta -o metadata/fb_e11_based -repN 2 \
 
 The output are a CSV file and a JSON file, where the CSV file is easy to view and the JSON file is used for subsequent analysis.
 
-`<img src='static/img/fb_e11.png'></img>`
+<img src='static/img/fb_e11.png'></img>
 
 ### example 2
 
@@ -78,7 +78,7 @@ $ astk meta -o metadata/fb_adj_based -repN 2 \
 
 ```
 
-`<img src='static/img/fb_adj.png'></img>`
+<img src='static/img/fb_adj.png'></img>
 
 ## dsflow
 
@@ -107,8 +107,8 @@ dpsi  psi  ref  sig01  tpm
 
 output contains 4 directories:
 
-* ref is used to save AS events references files
-* tpm is used to save transcript TPM files
-* psi is used to save AS event PSI files
-* dpsi is used to save AS event dPSI files
-* sig01 is used to save significants differential result
+* `ref` is used to save AS events references files
+* `tpm` is used to save transcript TPM files
+* `psi` is used to save AS event PSI files
+* `dpsi` is used to save AS event dPSI files
+* `sig01` is used to save significants differential result

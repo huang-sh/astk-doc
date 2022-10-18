@@ -34,10 +34,10 @@ $ astk signalProfile -o output/fb_16_AF_low_ATAC.png \
 ```
 
 fb_16_AF_high_ATAC.png
-`<img src='static/img/AF_high.png' alt="AF_high.png"></img>`
+<img src='static/img/AF_high.png' alt="AF_high.png"></img>
 
 fb_16_AF_low_ATAC.png
-`<img src='static/img/AF_low.png' alt="AF_low.png"></img>`
+<img src='static/img/AF_low.png' alt="AF_low.png"></img>
 
 ## Profile comparison
 

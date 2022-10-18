@@ -1,4 +1,4 @@
-# 参考文献
+# References
 
 <p>
 Trincado,J.L. et al. (2018) SUPPA2: fast, accurate, and uncertainty-aware differential splicing analysis across multiple conditions. Genome Biol., 19, 40.

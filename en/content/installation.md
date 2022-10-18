@@ -15,7 +15,7 @@ conda activate astk
 conda create -n astk -c bioconda bedtools meme -y
 ```
 
-**ASTK** is available from the Python Package Index (PyPI), it could bed installed like this:
+**ASTK** is available from the Python Package Index (PyPI), it could be installed like this:
 
 ```bash
 pip install astk
@@ -29,7 +29,7 @@ pip install git+https://github.com/huang-sh/astk.git@dev
 
 ```
 
-After installing **ASTK**, you also need to install some dependent R packages. It is recommended to configure a specific R execution path. If the R has installed some R packages, this will avoid repeated installation, so it can save a lot of time and resources. .
+After installing **ASTK**, you also need to install some dependent R packages. It is recommended to configure a specific R execution path. If the R has installed some R packages, this will avoid repeated installation, so it can save a lot of time and resources.
 
 Here is an example, you can configure the appropriate R path on your machine.
 
@@ -54,7 +54,7 @@ astk install -r
 ...
 ```
 
-> Some R packages will fail to install, you could try to install package with conda.
+> Some R packages may fail to install, you could try to install package with conda.
 
 ## Docker installation
 
