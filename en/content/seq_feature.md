@@ -102,6 +102,7 @@ $ tree gcc/fb_p0_AF_high
 
 4 directories, 25 files  
 ```
+
 <img src='static/img/gcc.png' alt="gcc.png"></img>
 
 ### exon/intron length
@@ -164,7 +165,6 @@ A3_5SS_high vs. A3_5SS_low: Mann-Whitney-Wilcoxon test two-sided, P_val:2.394e-2
 A4_3SS_high vs. A4_3SS_low: Mann-Whitney-Wilcoxon test two-sided, P_val:4.759e-01 U_stat=5.392e+06
 ```
 
-
 <img src='static/img/fb_e16_AF_sss.png' alt="fb_e16_AF_sss.png"></img>
 
 ### exon/intron length comparison
@@ -194,7 +194,7 @@ astk vcmp -e Length/0hr_FT_se_*/element_len.csv \
 
 <img src='static/img/FT_se_lencmp.png' alt="FT_se_lencmp.png"></img>
 
-### GC 含量比较
+### GC content comparison
 
 Splice site flank sequence GC content comparison among multiple condition. it can achieve by **vcmp** sub-command.
 
