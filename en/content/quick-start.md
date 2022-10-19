@@ -6,22 +6,11 @@ In this tutorial, we introduce how to utilize **ASTK** to rapidly perform differ
 
 ## data preparation
 
-**ASTK** requires transcript TPM(transcript per million) quantification files as input for differential splicing analysis. We have provided [quantification data](https://raw.githubusercontent.com/huang-sh/astk/main/demo/data.tar.gz) for quick start. However, you can still download raw data from [ENCODE](https://www.encodeproject.org/search/?type=Experiment&control_type!=*&assay_term_name=polyA%20plus%20RNA-seq&replicates.library.biosample.donor.organism.scientific_name=Mus%20musculus&biosample_ontology.term_name=forebrain&status=released). And you can refer to [Appendix](#/en/content/appendix) for [transcript quantification](#/en/content/appendix?id=transcript-quantification).
+**ASTK** requires transcript TPM(transcript per million) quantification files as input for differential splicing analysis. We have provided [quantification data](https://raw.githubusercontent.com/huang-sh/astk/main/demo/data.tar.gz) for quick start. However, you can still download raw data from [ENCODE](https://www.encodeproject.org/search/?type=Experiment&control_type!=*&assay_term_name=polyA%20plus%20RNA-seq&replicates.library.biosample.donor.organism.scientific_name=Mus%20musculus&biosample_ontology.term_name=forebrain&status=released) and refer to [Appendix](https://huang-sh.github.io/astk-doc/#/en/content/appendix) for [transcript quantification](https://huang-sh.github.io/astk-doc/#/en/content/appendix?id=transcript-quantification).
 
+[Genome annotation](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/gencode.vM25.annotation.gtf.gz) (GENCODE, mouse, release_M25) is also required for alternative splicing event inference.
 
-code:
-
-```bash
-# refer to https://combine-lab.github.io/alevin-tutorial/2019/selective-alignment/
-$ salmon index -t gentrome.fa.gz -d decoys.txt -p 12 -i salmon_index --gencode
-$ salmon quant -i salmon_index --gcBias --useVBOpt --seqBias  -r ENCFF329ACL.fastq.gz --validateMappings -o fb_e11.5_rep1 -p 30
-$ ls fb_e11.5_rep1
-aux_info  cmd_info.json  lib_format_counts.json  libParams  logs  quant.sf
-```
-
-> --gencode is required for GENCODE reference data
-
-The following is the quantification result:
+The following is the quantification data:
 
 ```bash
 $ ll  data/quant | cut -d " " -f 5-
@@ -39,13 +28,11 @@ $ ll  data/quant | cut -d " " -f 5-
 146 Oct 30  2021 fb_e16.5_rep2
 146 Oct 30  2021 fb_p0_rep1
 146 Oct 30  2021 fb_p0_rep2
+
+$ ll data/quant/fb_e11.5_rep*/quant.sf | cut -d " " -f 5-
+6970134 Aug 29 15:23 data/quant/fb_e11.5_rep1/quant.sf
+6981746 Aug 29 15:23 data/quant/fb_e11.5_rep2/quant.sf
 ```
-
-Data download link:
-
-- [quantification data](https://raw.githubusercontent.com/huang-sh/astk/main/demo/data.tar.gz)
-- [genome GTF annotation](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/gencode.vM25.annotation.gtf.gz) (GENCODE, mouse, release_M25)
-- [genome fasta](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/GRCm38.primary_assembly.genome.fa.gz) (GENCODE, mouse, release_M25). Sequence featrue extraction and motif analysis will use genome fasta.
 
 ## Metadata
 
@@ -93,7 +80,7 @@ $ astk meta -o metadata/fb_adj_based -repN 2 \
 
 ## dsflow
 
-v**dsflow** is wrapper of AS events inferring, PSI calculation,  differential splicing analysis and significants differential result selection.
+**dsflow** is wrapper of AS events inferring, PSI calculation,  differential splicing analysis and significants differential result selection.
 
 Arguments：
 
