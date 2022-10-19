@@ -1,8 +1,13 @@
 # Quick start
 
-## Data preparation
+## introduction
 
-**ASTK** requires transcript TPM(transcript per million) quantification files as input. And [salmon](https://github.com/COMBINE-lab/salmon) could produce a highly-accurate, transcript-level quantification estimates from RNA-seq data.
+In this tutorial, we introduce how to utilize **ASTK** to rapidly perform differential alternative splicing analysis using mouse forebrain RNA-Seq data from seven embryonic stages(e11.5–e16.5, p0).
+
+## data preparation
+
+**ASTK** requires transcript TPM(transcript per million) quantification files as input for differential splicing analysis. We have provided [quantification data](https://raw.githubusercontent.com/huang-sh/astk/main/demo/data.tar.gz) for quick start. However, you can still download raw data from [ENCODE](https://www.encodeproject.org/search/?type=Experiment&control_type!=*&assay_term_name=polyA%20plus%20RNA-seq&replicates.library.biosample.donor.organism.scientific_name=Mus%20musculus&biosample_ontology.term_name=forebrain&status=released). And you can refer to [Appendix](#/en/content/appendix) for [transcript quantification](#/en/content/appendix?id=transcript-quantification).
+
 
 code:
 
@@ -36,17 +41,23 @@ $ ll  data/quant | cut -d " " -f 5-
 146 Oct 30  2021 fb_p0_rep2
 ```
 
+Data download link:
+
+- [quantification data](https://raw.githubusercontent.com/huang-sh/astk/main/demo/data.tar.gz)
+- [genome GTF annotation](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/gencode.vM25.annotation.gtf.gz) (GENCODE, mouse, release_M25)
+- [genome fasta](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/GRCm38.primary_assembly.genome.fa.gz) (GENCODE, mouse, release_M25). Sequence featrue extraction and motif analysis will use genome fasta.
+
 ## Metadata
 
 **meta** is used to generate a metadata table for pairwise comparison of multiple groups.
 
 Arguments:
 
-* -o: output path
-* -repN: replicate number
-* -c1: condition 1(ctrl) sample transcript quantification files
-* -c2: condition 2(case) sample transcript quantification files
-* -gn: group names
+- -o: output path
+- -repN: replicate number
+- -c1: condition 1(ctrl) sample transcript quantification files
+- -c2: condition 2(case) sample transcript quantification files
+- -gn: group names
 
 ### example 1
 
@@ -86,13 +97,13 @@ v**dsflow** is wrapper of AS events inferring, PSI calculation,  differential sp
 
 Arguments：
 
-* -od: output dirctory
-* -md: metadata json, the output of **meta**
-* -gtf: genome annotation GTF file
-* -et: AS event type [ALL|SE|A5|A3|MX|RI|AF|AL]
-* -m: the method used to differential splicing computation [empirical|classical]
-* -p：p-value threshold
-* -adpsi: absolute dPSI threshold
+- -od: output dirctory
+- -md: metadata json, the output of **meta**
+- -gtf: genome annotation GTF file
+- -et: AS event type [ALL|SE|A5|A3|MX|RI|AF|AL]
+- -m: the method used to differential splicing computation [empirical|classical]
+- -p：p-value threshold
+- -adpsi: absolute dPSI threshold
 
 code：
 
@@ -107,8 +118,8 @@ dpsi  psi  ref  sig01  tpm
 
 output contains 4 directories:
 
-* `ref` is used to save AS events references files
-* `tpm` is used to save transcript TPM files
-* `psi` is used to save AS event PSI files
-* `dpsi` is used to save AS event dPSI files
-* `sig01` is used to save significants differential result
+- `ref` is used to save AS events references files
+- `tpm` is used to save transcript TPM files
+- `psi` is used to save AS event PSI files
+- `dpsi` is used to save AS event dPSI files
+- `sig01` is used to save significants differential result

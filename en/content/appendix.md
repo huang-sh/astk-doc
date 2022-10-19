@@ -1,5 +1,22 @@
 # Appendix
 
+## Transcript quantification
+
+**ASTK** requires transcript TPM(transcript per million) quantification files as input. And [salmon](https://github.com/COMBINE-lab/salmon) could produce a highly-accurate, transcript-level quantification estimates from RNA-seq data.
+
+code:
+
+```bash
+# refer to https://combine-lab.github.io/alevin-tutorial/2019/selective-alignment/
+$ salmon index -t gentrome.fa.gz -d decoys.txt -p 12 -i salmon_index --gencode
+$ salmon quant -i salmon_index --gcBias --useVBOpt --seqBias  -r ENCFF329ACL.fastq.gz --validateMappings -o fb_e11.5_rep1 -p 30
+$ ls fb_e11.5_rep1
+aux_info  cmd_info.json  lib_format_counts.json  libParams  logs  quant.sf
+```
+
+> --gencode is required for GENCODE reference data
+
+
 ## Option/Argument naming convention
 
 For input option naming:
