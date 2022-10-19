@@ -9,3 +9,4 @@
 - [Motif分析](zh-cn/content/motif_analysis.md)
 - [表观信号分析](zh-cn/content/epi_analysis.md)
 - [参考文献](zh-cn/content/references.md)
+- [附录](zh-cn/content/appendix.md)
