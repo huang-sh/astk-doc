@@ -2,7 +2,7 @@
 
 ## Data preparation
 
-**ASTK** requires transcript TPM quantification files as input. And [salmon](https://github.com/COMBINE-lab/salmon) could produce a highly-accurate, transcript-level quantification estimates from RNA-seq data.
+**ASTK** requires transcript TPM(transcript per million) quantification files as input. And [salmon](https://github.com/COMBINE-lab/salmon) could produce a highly-accurate, transcript-level quantification estimates from RNA-seq data.
 
 code:
 
