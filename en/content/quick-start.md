@@ -10,6 +10,8 @@ In this tutorial, we introduce how to utilize **ASTK** to rapidly perform differ
 
 [Genome annotation](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/gencode.vM25.annotation.gtf.gz) (GENCODE, mouse, release_M25) is also required for alternative splicing event inference.
 
+[Genome fasta](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/gencode.vM25.annotation.gtf.gz) (GENCODE, mouse, release_M25) is also required for subsequent analyses, but not in the quick start tutorial.
+
 The following is the quantification data:
 
 ```bash
@@ -61,7 +63,7 @@ $ astk meta -o metadata/fb_e11_based -repN 2 \
 
 The output are a CSV file and a JSON file, where the CSV file is easy to view and the JSON file is used for subsequent analysis.
 
-<img src='static/img/fb_e11.png'></img>
+`<img src='static/img/fb_e11.png'></img>`
 
 ### example 2
 
@@ -76,7 +78,7 @@ $ astk meta -o metadata/fb_adj_based -repN 2 \
 
 ```
 
-<img src='static/img/fb_adj.png'></img>
+`<img src='static/img/fb_adj.png'></img>`
 
 ## dsflow
 
