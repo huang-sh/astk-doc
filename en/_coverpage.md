@@ -3,7 +3,8 @@
 > A toolkit for Alternative splicing analysis.
 
 * AS event analysis
-* Sequence feature
+* Differential splicing analysis
+* Sequence feature extraction
 * RBP Motif analysis
 * Epigenetic signal profiling
 
