@@ -23,29 +23,10 @@ pip install git+https://github.com/huang-sh/astk.git@dev
 
 ```
 
-After installing **ASTK**, you also need to install some dependent R packages. It is recommended to configure a specific R execution path. If the R has installed some R packages, this will avoid repeated installation, so it can save a lot of time and resources.
-
-Here is an example, you can configure the appropriate R path on your machine.
-
-```bash
-## search a R path
-$ conda activate R41
-$ which R
-~/software/anaconda/envs/R41/bin/R
-
-# return the astk environment
-$ conda activate astk
-# configure R path for astk
-$ astk config -R ~/software/anaconda/envs/R41/bin/R
-```
-
-> It is not necessary. And if you don't have a suitable R on your machine, you can leave it out.
-
-After that, you can use follow command to install the dependent R package.
+After installing **ASTK**, you could install all dependent R package using below command:
 
 ```bash
 astk install -r 
-...
 ```
 
 > It will take a lot of time to install all dependent R packages. If you can refer to [astk install](https://huang-sh.github.io/astk-doc/#/en/content/utilitiy) to use astk to quickly achieve the analysis you want.

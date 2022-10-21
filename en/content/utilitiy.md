@@ -40,3 +40,33 @@ You could install `magick` via `conda` or other ways.
 $ conda install -c conda-forge r-magick
 $ astk install -cran eoffice
 ```
+
+## config
+
+`config` sub-command could configure a specific R execution path for **ASTK** calling. If the R has installed **ASTK** R dependencies packages, this will avoid repeated installation and save a lot of time and resources.
+
+Here is an example, you can configure the appropriate R path on your machine.
+
+```bash
+## search a R path
+$ conda activate R41
+$ which R
+~/software/anaconda/envs/R41/bin/R
+
+# return the astk environment
+$ conda activate astk
+# configure R path for astk
+$ astk config -R ~/software/anaconda/envs/R41/bin/R
+```
+
+## merge
+
+`merge`  is a sub-command for merge files into one.
+
+Arguments:
+
+- -i: input files
+- -o: output path
+- -axis: merge direction, 0 for row merge and 1 for column merge
+- -rmdup: remove duplicate rows [index|all|content]
+- -rmna:  remove NA data
