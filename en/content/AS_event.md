@@ -37,7 +37,7 @@ output contains 4 directories:
 
 ### single-step running
 
-We implement the functions of AS events inferring, PSI calculation,  differential splicing analysis based on SUPPA2 algorithm within **ASTK**. Therefore, there are TREE sub-commands with the same name as SUPPA2. Most of the time, it is more convenient to use [dsflow](en/content/AS_event?id=dsflow).
+We implement the functions of AS events inferring, PSI calculation,  differential splicing analysis based on SUPPA2 algorithm within **ASTK**. Therefore, there are three sub-commands with the same name as SUPPA2. Most of the time, it is more convenient to use [dsflow](en/content/AS_event?id=dsflow).
 
 #### AS events inferring
 
@@ -98,7 +98,7 @@ ENSMUST00000082908.1    0.0     0.0
 
 #### AS events differential splicing computation
 
-**diffSplice** is used to Calculate differential splicing for AS events.
+**diffSplice** is used to calculate differential splicing for AS events.
 
 Arguments:
 
