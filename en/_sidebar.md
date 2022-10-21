@@ -1,6 +1,5 @@
 <!-- docs/_sidebar.md -->
 
-# Content
 
 - [Introduction](en/README.md)
 - [Installation](en/content/installation.md)
