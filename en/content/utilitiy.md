@@ -43,7 +43,7 @@ $ astk install -cran eoffice
 
 ## config
 
-`config` sub-command could configure a specific R execution path for **ASTK** calling. If the R has installed **ASTK** R dependencies packages, this will avoid repeated installation and save a lot of time and resources.
+`config` sub-command could configure a specific R execution path for **ASTK** calling. If the R has installed **ASTK** R dependencies packages, this will avoid repeated installation and save a lot of time and resources. The **ASTK** sub-command dependencies can refer to [ASTK function dependencies](https://huang-sh.github.io/astk-doc/#/en/content/appendix?id=astk-function-dependencies)
 
 Here is an example, you can configure the appropriate R path on your machine.
 
