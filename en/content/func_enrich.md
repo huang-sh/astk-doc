@@ -38,9 +38,9 @@ img/enrich/fb_e11_13_SE_doc_sc
 
 In the output, *.csv files store the results as text, and *png files display the content as images.
 
-`<img src='static/img/GO.BP.qval0.1_pval0.1.png' alt="GO.BP.qval0.1_pval0.1.png"></img>`
+<img src='static/img/GO.BP.qval0.1_pval0.1.png' alt="GO.BP.qval0.1_pval0.1.png"></img>
 
-`<img src='static/img/GO_BP_simple.png' alt="GO_BP_simple.png"></img>`
+<img src='static/img/GO_BP_simple.png' alt="GO_BP_simple.png"></img>
 
 ## Enrichment comparison
 
