@@ -15,12 +15,6 @@ conda activate astk
 conda create -n astk -c bioconda bedtools meme -y
 ```
 
-**ASTK** is available from the Python Package Index (PyPI), it could be installed like this:
-
-```bash
-pip install astk
-```
-
 You could install a development version from github:
 
 ```bash
