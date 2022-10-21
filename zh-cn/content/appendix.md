@@ -4,7 +4,7 @@
 
 **ASTK** requires transcript TPM(transcript per million) quantification files as input. And [salmon](https://github.com/COMBINE-lab/salmon) could produce a highly-accurate, transcript-level quantification estimates from RNA-seq data.
 
-code:
+Follow is an example:
 
 ```bash
 # refer to https://combine-lab.github.io/alevin-tutorial/2019/selective-alignment/
@@ -15,7 +15,6 @@ aux_info  cmd_info.json  lib_format_counts.json  libParams  logs  quant.sf
 ```
 
 > --gencode is required for GENCODE reference data
-
 
 ## Option/Argument naming convention
 
