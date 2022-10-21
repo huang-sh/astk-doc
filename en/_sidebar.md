@@ -1,5 +1,7 @@
 <!-- docs/_sidebar.md -->
 
+# Content
+
 - [Introduction](en/README.md)
 - [Installation](en/content/installation.md)
 - [Quick start](en/content/quick-start.md)
@@ -7,6 +9,7 @@
 - [Sequence feature](en/content/seq_feature.md)
 - [Function enrichment](en/content/func_enrich.md)
 - [Motif analysis](en/content/motif_analysis.md)
-- [epigenetic analysis](en/content/epi_analysis.md)
+- [Epigenetic analysis](en/content/epi_analysis.md)
+- [Useful utilities](en/content/utilitiy.md)
 - [References](en/content/references.md)
 - [Appendix](en/content/appendix.md)

@@ -54,7 +54,7 @@ astk install -r
 ...
 ```
 
-> Some R packages may fail to install, you could try to install package with conda.
+> It will take a lot of time to install all dependent R packages. If you can refer to [astk install](https://huang-sh.github.io/astk-doc/#/en/content/utilitiy) to use astk to quickly achieve the analysis you want.
 
 ## Docker installation
 
