@@ -108,7 +108,7 @@ Arguments:
 
 ```bash
 astk necmp -i ni_adj_ct/sig01/{0_3,3_6,6_12}_SE.sig.dpsi \
-    -od output/necmp -xl 0_3 3_6 6_12 -n 15 -qval 0.1
+    -od output/necmp -xl 0_3 3_6 6_12 -n 15 -qval 0.1 -fw 4 -fh 6
 ```
 
 <img src='static/img/necmp.png' alt="necmp.png"></img>
