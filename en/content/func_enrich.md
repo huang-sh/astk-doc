@@ -42,7 +42,7 @@ In the output, *.csv files store the results as text, and *png files display the
 
 <img src='static/img/GO_BP_simple.png' alt="GO_BP_simple.png"></img>
 
-## Enrichment comparison
+## ORA enrichment comparison
 
 **enrichCompare** is used for comparing functional profiles among different experiments. **ecmp**  is the short alias.
 
@@ -89,6 +89,29 @@ astk nease -i result/ni_adj_ct/sig01/0_3_SE.sig.dpsi \
 ```
 
 <img src='static/img/nease.png' alt="nease.png"></img>
+
+## NEASE comparison
+
+**neaseCompare** is used to compare NEASE enrichment result among different experiments. **necmp**  is the short alias.
+
+Arguments:
+
+* -i: dpsi files
+* -od: output directory
+* -qval: q-value
+* -org: only Human
+* -db: database, [PharmGKB|HumanCyc|Wikipathways|Reactome|KEGG|SMPDB|Signalink|NetPath|EHMN|INOH|BioCarta|PID]
+* -xl: x labels
+* -n: show the top n terms
+* -fw: figure width
+* -fh: figure height
+
+```bash
+astk necmp -i ni_adj_ct/sig01/{0_3,3_6,6_12}_SE.sig.dpsi \
+    -od output/necmp -xl 0_3 3_6 6_12 -n 15 -qval 0.1
+```
+
+<img src='static/img/necmp.png' alt="necmp.png"></img>
 
 <h2>References</h2>
 <p>
