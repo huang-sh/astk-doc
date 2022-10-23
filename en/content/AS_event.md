@@ -21,7 +21,7 @@ code：
 ```bash
 $ mkdir result
 $ astk dsflow -od result/fb_e11_based -md metadata/fb_e11_based.json \
-    -gtf gencode.vM25.annotation.gtf -et ALL &
+    -gtf gencode.vM25.annotation.gtf -et ALL
 
 $ ls result/fb_e11_based
 dpsi  psi  ref  sig01  tpm
@@ -54,7 +54,7 @@ code：
 
 ```bash
 $ astk generateEvent -gtf gencode.vM25.annotation.gtf  -et SE \
-    -o result/fb_e11_based/ref/gencode.vM25
+    -o gencode.vM25
 
 $ head gencode.vM25_SE_strict.ioe
 seqname gene_id event_id        alternative_transcripts total_transcripts
@@ -77,23 +77,29 @@ Arguments:
 code:
 
 ```bash
-$ astk psiPerEvent -o fb_SE_e10.psi \
-    -qf data/quant/fb_e10.5_rep*/quant.sf \
+$ astk psiPerEvent -o fb_SE_e11.psi \
+    -qf data/quant/fb_e11.5_rep*/quant.sf \
+    -ioe gencode.vM25_SE_strict.ioe
+
+$ astk psiPerEvent -o fb_SE_e16.psi \
+    -qf data/quant/fb_e16.5_rep*/quant.sf \
     -ioe gencode.vM25_SE_strict.ioe
 
 
-$ head fb_SE_e10.psi
-event_id        fb_e10.5_rep1   fb_e10.5_rep2
-ENSMUSG00000025900.13;SE:chr1:4293012-4311270:4311433-4351910:- 1.0     1.0
-ENSMUSG00000025902.13;SE:chr1:4492668-4493100:4493466-4493772:- 0.50685587094156        0.49103663421745114
-ENSMUSG00000025902.13;SE:chr1:4492668-4493100:4493490-4493772:- 0.7405788514940302      0.697045848727448
-ENSMUSG00000025902.13;SE:chr1:4493863-4495136:4495942-4496291:- 0.20508467461294735     0.16355428896798765
+$ head fb_SE_e11.psi -n 5
+event_id        fb_e11.5_rep1   fb_e11.5_rep2
+ENSMUSG00000025900.13;SE:chr1:4293012-4311270:4311433-4351910:- 1.0     0
+ENSMUSG00000025902.13;SE:chr1:4492668-4493100:4493466-4493772:- 0.5909638662971756      0.7763651621731414
+ENSMUSG00000025902.13;SE:chr1:4492668-4493100:4493490-4493772:- 0.8259026936895806      0.8056399646246479
+ENSMUSG00000025902.13;SE:chr1:4493863-4495136:4495942-4496291:- 0.21779305143835212     0.3238071557979279
+
 
 # it also produce the transcript TPM file
-$ head fb_SE_e10.tpm -n 3
-fb_e10.5_rep1   fb_e10.5_rep2
-ENSMUST00000193812.1    0.0     0.0
+$ head fb_SE_e11.tpm -n 3
+fb_e11.5_rep1   fb_e11.5_rep2
+ENSMUST00000193812.1    0.060544        0.0
 ENSMUST00000082908.1    0.0     0.0
+
 ```
 
 #### AS events differential splicing computation
@@ -112,7 +118,7 @@ code:
 
 ```bash
 $ astk diffSplice -psi fb_SE_e11.psi fb_SE_e16.psi\
-    -exp fb_SE_e11.tpm b_SE_e16.tpm\
+    -exp fb_SE_e11.tpm fb_SE_e16.tpm\
     -ref gencode.vM25_SE_strict.ioe \
     -o fb_SE_e10_e16.dpsi 
 ```
