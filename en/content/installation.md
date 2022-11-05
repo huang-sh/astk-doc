@@ -12,7 +12,7 @@ conda create -n astk -c conda-forge r-base=4.1 python=3.8 -y
 # activate  astk environment
 conda activate astk
 ## install two dependencies softwares
-conda create -n astk -c bioconda bedtools meme -y
+conda install -c bioconda bedtools meme -y
 ```
 
 You could install a development version from github:

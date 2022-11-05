@@ -99,7 +99,7 @@ code：
 ```bash
 $ mkdir result
 $ astk dsflow -od result/fb_e11_based -md metadata/fb_e11_based.json \
-    -gtf gencode.vM25.annotation.gtf -et ALL &
+    -gtf gencode.vM25.annotation.gtf -et ALL 
 
 $ ls result/fb_e11_based
 dpsi  psi  ref  sig01  tpm

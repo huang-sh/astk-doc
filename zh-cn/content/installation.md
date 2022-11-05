@@ -12,7 +12,7 @@ $ conda create -n astk -c conda-forge r-base=4.1 python=3.8 -y
 ## 激活环境 astk
 $ conda activate astk
 ## 安装两个依赖软件
-$ conda create -n astk -c bioconda bedtools meme -y
+$ conda install -c bioconda bedtools meme -y
 ```
 
 从PyPi安装**astk**（当前不要使用该安装方式!）
