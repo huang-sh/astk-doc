@@ -8,11 +8,11 @@ First, you should create a virtual environment for **ASTK** using conda.Although
 
 ```bash
 ## create a new environment named astk , install Python and R
-conda create -n astk -c conda-forge r-base=4.1 python=3.8 -y
+conda create -n astk -c conda-forge r-base=4.2 python=3.8 -y
 # activate  astk environment
 conda activate astk
-## install two dependencies softwares
-conda install -c bioconda bedtools meme -y
+## install meme-suite for motif analysis
+conda install -c bioconda meme -y
 ```
 
 You could install a development version from github:
