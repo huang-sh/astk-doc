@@ -21,7 +21,7 @@ code:
 ```bash
 $ mkdir output/enrich -p
 $ astk enrich -i result/fb_e11_based/sig01/fb_e11_13_SE.sig.dpsi \
-    -ont BP -qval 0.1 -orgdb mm  -fmt png \
+    -ont BP -qval 0.1 -org mm  -fmt png \
     -od output/enrich/fb_e11_13_SE --simple
 
 $ tree output/enrich/fb_e11_13_SE
