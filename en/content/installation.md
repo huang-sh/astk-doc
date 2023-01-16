@@ -20,6 +20,8 @@ You could install a development version from github:
 ```bash
 ## install the development version from github
 pip install git+https://github.com/huang-sh/astk.git@dev
+# or
+pip install git+ssh://git@github.com/huang-sh/astk.git@dev
 
 ```
 
