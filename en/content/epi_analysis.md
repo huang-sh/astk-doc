@@ -16,10 +16,10 @@ Arguments:
 code:
 
 ```bash
-$ astk pf -i result/fb_e11_based/psi/fb_e11_16_AF_case.psi \
+$ astk pf -i result/fb_e11_based/psi/fb_e11_16_AF_c2.psi \
     -psi 0.8 -o result/fb_e11_based/psi/fb_16_AF_high.psi
 
-$ astk pf -i result/fb_e11_based/psi/fb_e11_16_AF_case.psi \
+$ astk pf -i result/fb_e11_based/psi/fb_e11_16_AF_c2.psi \
     -psi -0.2 -o result/fb_e11_based/psi/fb_16_AF_low.psi
 
 $ astk signalProfile -o output/fb_16_AF_high_ATAC.png \
