@@ -81,7 +81,7 @@ K-nearest neighbors classifier parameters:
 code:
 
 ```bash
-astk hpo -clf RF -i result/fb_e11_based_tpm1/seqf/e${i}/seqf_fb_${i}_${et}_{high,low}.alt.csv \
+astk hpo -clf RF -i result/fb_e11_based_tpm1/seqf/e16/seqf_fb_16_SE_{high,low}.alt.csv \
     --n_estimators 50 200 20 --max_depth 4 10 6 -p 40
 
 ## command running output 
@@ -194,3 +194,17 @@ acc                                            0.68
 mcc                                            0.37
 -------------------------------------------------------
 ```
+
+## feature importance
+
+**ASTK** uses Permutation feature importance as the evaluation metric for feature importance. 
+And we can use sub-command **fs** in **ASTK**. The classifier arguments setting is similar to **hpo**, and other arguments could be view with `astk fs -h`.
+
+```
+astk fs -clf RF  -i result1/fb_e11_based_tpm1/seqf/e16/seqf_fb_16_SE_{high,low}.alt.csv \
+        -cv 5 -p 2 --criterion entropy --max_depth 7 --max_features sqrt --n_estimators 168 \
+        -o result1/fb_e11_based_tpm1/eval/16/fi_seqf_fb_16_SE_b150.alt.RF.png
+
+```
+
+<img src='static/img/fi_seqf_fb_16_SE_b150.alt.RF.png' alt="fi_seqf_fb_16_SE_b150.alt.RF.png" width="50%" height="50%"></img>
