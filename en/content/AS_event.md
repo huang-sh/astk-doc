@@ -146,16 +146,18 @@ Arguments:
 
 * -i: psi file
 * -o: output path
-* -psi: PSI threshold
-* -qt: percentage threshold
+* -minv: minimum PSI threshold value
+* -maxv: maximal PSI threshold value
+* -minq: minimum quantile threshold value
+* -maxq: maximal quantile threshold value
 
 code:
 
 ```bash
 $ astk pf -i result/fb_e11_based/psi/fb_e11_p0_SE_case.psi \
-    -psi 0.8 -o result/fb_e11_based/psi/fb_p0_SE_high.psi
+    -minv 0.8 -o result/fb_e11_based/psi/fb_p0_SE_high.psi
 $ astk pf -i result/fb_e11_based/psi/fb_e11_p0_SE_case.psi \
-    -psi -0.2 -o result/fb_e11_based/psi/fb_p0_SE_low.psi
+    -maxv -0.2 -o result/fb_e11_based/psi/fb_p0_SE_low.psi
 ```
 
 ### length cluster

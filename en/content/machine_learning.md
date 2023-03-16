@@ -7,7 +7,7 @@ Currently, **ASTK** provides three subcommands for hpyper-parameter optimization
 
 ## feature extraction
 
-The follow is code to extract sequence feature for next machine learning model. And sub-command detail usage could refer to other module content.
+The follow is code to extract sequence feature for next step machine learning model. And sub-command detail usage could refer to other module content.
 
 ```bash
 ## filter high PSI or low PSI AS event
