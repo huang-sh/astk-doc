@@ -8,4 +8,5 @@
 - [Function enrichment](en/content/func_enrich.md)
 - [Motif analysis](en/content/motif_analysis.md)
 - [epigenetic analysis](en/content/epi_analysis.md)
+- [Machine learning](en/content/epi_analysis.md)
 - [References](en/content/references.md)
