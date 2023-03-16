@@ -9,6 +9,7 @@
 - [Function enrichment](en/content/func_enrich.md)
 - [Motif analysis](en/content/motif_analysis.md)
 - [Epigenetic analysis](en/content/epi_analysis.md)
+- [Machine learning](en/content/epi_analysis.md)
 - [Useful utilities](en/content/utilitiy.md)
 - [References](en/content/references.md)
 - [Appendix](en/content/appendix.md)
