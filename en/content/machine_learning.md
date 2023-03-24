@@ -138,6 +138,7 @@ astk eval -clf RF  -i result1/fb_e11_based_tpm1/seqf/e16/seqf_fb_16_SE_{high,low
 The **eval** command output is a ROC curve plot and detailed cross-validation results.
 
 ROC curve plot:
+
 <img src='static/img/seqf_fb_16_SE_b150.alt.RF.png' alt="seqf_fb_16_SE_b150.alt.RF.png" width="50%" height="50%"></img>
 
 cross-validation results:
