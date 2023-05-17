@@ -8,7 +8,7 @@
 
 ```bash
 ## 创建一个新环境名为askt, 同时安装 Python 和 R
-$ conda create -n astk -c conda-forge r-base=4.1 python=3.8 -y
+$ conda create -n astk -c conda-forge r-base=4.1 python=3.9 -y
 ## 激活环境 astk
 $ conda activate astk
 ## 安装两个依赖软件

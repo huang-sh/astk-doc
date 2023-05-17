@@ -8,7 +8,7 @@ First, you should create a virtual environment for **ASTK** using conda.Although
 
 ```bash
 ## create a new environment named astk , install Python and R
-conda create -n astk -c conda-forge r-base=4.2 python=3.8 -y
+conda create -n astk -c conda-forge r-base=4.2 python=3.9 -y
 # activate  astk environment
 conda activate astk
 ## install meme-suite for motif analysis
