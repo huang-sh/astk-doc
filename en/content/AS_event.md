@@ -157,7 +157,7 @@ code:
 $ astk pf -i result/fb_e11_based/psi/fb_e11_p0_SE_case.psi \
     -minv 0.8 -o result/fb_e11_based/psi/fb_p0_SE_high.psi
 $ astk pf -i result/fb_e11_based/psi/fb_e11_p0_SE_case.psi \
-    -maxv -0.2 -o result/fb_e11_based/psi/fb_p0_SE_low.psi
+    -maxv 0.2 -o result/fb_e11_based/psi/fb_p0_SE_low.psi
 ```
 
 ### length cluster
