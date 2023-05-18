@@ -241,7 +241,8 @@ Arguments:
 * -fmt: figure format
 * --width: figure width
 * --height: figure height
-* -gn: group names
+* -gl: group labels
+* -gb: this option is used to choose whether the sample information is stored in rows or columns;AS event PSI use col, feature values use row
 
 code:
 
@@ -250,7 +251,7 @@ $ astk pca -i result/fb_e11_based/psi/fb_e11_12_SE_c1.psi \
     result/fb_e11_based/psi/fb_e11_1[2-6]_SE_c2.psi \
     result/fb_e11_based/psi/fb_e11_p0_SE_c2.psi \
     -o img/fb_pca.png -fmt png --width 6 --height 4 \
-    -gn fb_e11.5 fb_e12.5 fb_e13.5 fb_e14.5 fb_e15.5 fb_e16.5 fb_p0
+    -gl fb_e11.5 fb_e12.5 fb_e13.5 fb_e14.5 fb_e15.5 fb_e16.5 fb_p0 -gb col
 
 ```
 
