@@ -238,7 +238,6 @@ Arguments:
 
 * -i: psi files
 * -o: output figure path
-* -fmt: figure format
 * --width: figure width
 * --height: figure height
 * -gl: group labels
@@ -250,7 +249,7 @@ code:
 $ astk pca -i result/fb_e11_based/psi/fb_e11_12_SE_c1.psi \
     result/fb_e11_based/psi/fb_e11_1[2-6]_SE_c2.psi \
     result/fb_e11_based/psi/fb_e11_p0_SE_c2.psi \
-    -o img/fb_pca.png -fmt png --width 6 --height 4 \
+    -o img/fb_pca.png --width 6 --height 4 \
     -gl fb_e11.5 fb_e12.5 fb_e13.5 fb_e14.5 fb_e15.5 fb_e16.5 fb_p0 -gb col
 
 ```
@@ -265,14 +264,14 @@ Arguments:
 
 * -i: psi files
 * -o: output figure path
-* -fmt: figure format
+* -ff: figure format
 
 code:
 
 ```bash
 $ astk hm -i result/fb_e11_based/sig01/psi/fb_e11_12_SE_c1.sig.psi \
     result/fb_e11_based/sig01/psi/fb_e11_1*_SE_c2.sig.psi \
-    -o img/fb_hm.png -fmt png
+    -o img/fb_hm.png -ff png
 
 ```
 
