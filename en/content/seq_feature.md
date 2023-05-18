@@ -113,13 +113,13 @@ Arguments:
 
 * -e: AS event path
 * -od: output directory
-* -log: log2 transformation
+* --scale: ength value scale method
 
 code:
 
 ```basdh
 $ mkdir len
-$ astk getlen -e result/fb_e11_based/psi/fb_e11_p0_AF_high.psi -od len/fb_p0_AF -log
+$ astk getlen -e result/fb_e11_based/psi/fb_e11_p0_AF_high.psi -od len/fb_p0_AF --scale log
 $ ls len/fb_p0_A
 element_len.csv  element_len.png
 ```
