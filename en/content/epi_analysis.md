@@ -33,6 +33,11 @@ $ astk signalExtract -e result/fb_e11_based/psi/fb_16_AF_low.psi \
 
 **signalHeatmap** is used to plot signal heatmap
 
+Arguments:
+
+* -s: AS event signal CSV file
+* -o: output path
+
 
 ```bash
 $ astk shm -s output/fb_16_AF_high_ATAC.b5.csv --label high \
