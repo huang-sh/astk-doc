@@ -2,9 +2,9 @@
 
 **ASTK** implement the module for profiling splicing sites epigenetic signal of AS events.
 
-## heatmap profile
+## Extract signal
 
-**signalProfile** characterizes the epigenetic signal distribution of splice sites in heatmap manner.
+**signalExtract** could extract bigwig signal of splice sites
 
 Arguments:
 
@@ -17,20 +17,31 @@ code:
 
 ```bash
 $ astk pf -i result/fb_e11_based/psi/fb_e11_16_AF_c2.psi \
-    -psi 0.8 -o result/fb_e11_based/psi/fb_16_AF_high.psi
+    -minq 0.8 -o result/fb_e11_based/psi/fb_16_AF_high.psi
 
 $ astk pf -i result/fb_e11_based/psi/fb_e11_16_AF_c2.psi \
-    -psi -0.2 -o result/fb_e11_based/psi/fb_16_AF_low.psi
+    -maxq 0.2 -o result/fb_e11_based/psi/fb_16_AF_low.psi
 
-$ astk signalProfile -o output/fb_16_AF_high_ATAC.png \
-    -e result/fb_e11_based/psi/fb_16_AF_high.psi \
-    -bw ATAC.e16.5.fb.bigwig \
-    -ssl A1 A2 A3 A4 A5 -fmt png
 
-$ astk signalProfile -o output/fb_16_AF_low_ATAC.png \
-    -e result/fb_e11_based/psi/fb_16_AF_low.psi \
-    -bw ATAC.e16.5.fb.bigwig \
-    -ssl A1 A2 A3 A4 A5 -fmt png
+$ astk signalExtract -e result/fb_e11_based/psi/fb_16_AF_high.psi \
+    -bw ATAC.e16.5.fb.bigwig -bs 5 -o output/fb_16_AF_high_ATAC.b5.csv
+
+$ astk signalExtract -e result/fb_e11_based/psi/fb_16_AF_low.psi \
+    -bw ATAC.e16.5.fb.bigwig -bs 5 -o output/fb_16_AF_low_ATAC.b5.csv
+```
+## Extract signal
+
+**signalHeatmap** is used to plot signal heatmap
+
+
+```bash
+$ astk shm -s output/fb_16_AF_high_ATAC.b5.csv --label high \
+        -o output/AF_high.png
+$ astk shm -s output/fb_16_AF_low_ATAC.b5.csv --label low \
+        -o output/AF_low.png
+
+$ astk shm -s output/fb_ATAC_16_AF_{high,low}.b5.csv --label high low\
+        -o output/AF_high_vs_low.png
 ```
 
 fb_16_AF_high_ATAC.png
@@ -39,24 +50,5 @@ fb_16_AF_high_ATAC.png
 fb_16_AF_low_ATAC.png
 <img src='static/img/AF_low.png' alt="AF_low.png"></img>
 
-## Profile comparison
-
-**sp2** sub-command is used for signal distribution comparison between the two condition.
-
-Arguments:
-
-* -mat: the output of **signalProfile**
-* -o: output path
-* -gn: group names
-* --width: figure width
-* --height: figure height
-
-code
-
-```bash
-
-$ astk sp2 -mat output/fb_16_AF_*_ATAC.mat.gz \
-    -o output/fb_e16.5_AF_atac.ecmp.pdf -gn high low --width 10 --height 8 
-```
-
+AF_high_vs_low.png
 <img src='static/img/AF_high_vs_low.png' alt="AF_high_vs_low.png"></img>
