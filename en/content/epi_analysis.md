@@ -11,7 +11,8 @@ Arguments:
 * -e: AS event file
 * -o: output path
 * -bw: bigwig file
-* -ssl: splicing site labels
+* -bs: binsze
+
 
 code:
 
