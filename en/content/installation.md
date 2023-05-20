@@ -31,7 +31,8 @@ After installing **ASTK**, you could install all dependent R package using below
 astk install -r 
 ```
 
-> It will take a lot of time to install all dependent R packages. If you can refer to [astk install](https://huang-sh.github.io/astk-doc/#/en/content/utilitiy) to use astk to quickly achieve the analysis you want.
+**Note!!!**
+>  It will take a lot of time to install all dependent R packages. If you can refer to [astk install](https://huang-sh.github.io/astk-doc/#/en/content/utilitiy) to use astk to quickly achieve the analysis you want.
 
 ## Docker installation
 

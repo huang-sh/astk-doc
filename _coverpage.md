@@ -2,11 +2,19 @@
 
 > A toolkit for Alternative splicing analysis.
 
-* AS event analysis
+* AS events quantification 
 * Differential splicing analysis
-* Sequence feature extraction
+* AS events distribution analysis
+* AS events PSI/dPSI pattern analysis
+* AS events function enrichment
 * RBP motif analysis
-* Epigenetic signal profiling
+* Ssequence feature extraction
+* Epigenetic feature extraction
+* Feature visualization
+* Feature value statistical test
+* Machine learning modelling
+* Feature importance scoring
+
 
 [GitHub](https://github.com/huang-sh/astk)
 [Get Started](en/README.md)
