@@ -116,14 +116,14 @@ Random Forest classifier parameters:
 
 * --n_estimators: regularization parameter
 * --criterion: the criterion to measure the quality of a split: [gini|entropy|log_loss]
-* --max_features: the number of features to consider when looking for the best split [sqrt|log2] 
-* --max_depth: the maximum depth of the tree  
+* --max-features: the number of features to consider when looking for the best split [sqrt|log2] 
+* --max-depth: the maximum depth of the tree  
 
 K-nearest neighbors classifier parameters:
 
-* --n_neighbors: number of neighbors to use 
+* --n-neighbors: number of neighbors to use 
 * --weights:  weight function used in prediction: [uniform|distance] 
-* --leaf_size: Leaf size passed to BallTree or KDTree 
+* --leaf-size: Leaf size passed to BallTree or KDTree 
 * --metric:  metric to use for distance computation: [minkowski|cityblock|euclidean|manhattan]
 
 
@@ -132,7 +132,7 @@ code
 ```bash
 
 astk eval -clf RF  -i result1/fb_e11_based_tpm1/seqf/e16/seqf_fb_16_SE_{high,low}.alt.csv \
-        -cv 5 -p 2 --criterion entropy --max_depth 7 --max_features sqrt --n_estimators 168 \
+        -cv 5 -p 2 --criterion entropy --max-depth 7 --max-features sqrt --n-estimators 168 \
         -o result1/fb_e11_based_tpm1/eval/16/seqf_fb_16_SE_b150.alt.RF.txt
 ```
 The **eval** command output is a ROC curve plot and detailed cross-validation results.
@@ -203,7 +203,7 @@ And we can use sub-command **fs** in **ASTK**. The classifier arguments setting 
 
 ```
 astk fs -clf RF  -i result1/fb_e11_based_tpm1/seqf/e16/seqf_fb_16_SE_{high,low}.alt.csv \
-        -cv 5 -p 2 --criterion entropy --max_depth 7 --max_features sqrt --n_estimators 168 \
+        -cv 5 -p 2 --criterion entropy --max-depth 7 --max-features sqrt --n-estimators 168 \
         -o result1/fb_e11_based_tpm1/eval/16/fi_seqf_fb_16_SE_b150.alt.RF.png
 
 ```
