@@ -70,3 +70,9 @@ Arguments:
 - -axis: merge direction, 0 for row merge and 1 for column merge
 - -rmdup: remove duplicate rows [index|all|content]
 - -rmna:  remove NA data
+
+## getcoor
+
+`getcoor` could get 
+
+
