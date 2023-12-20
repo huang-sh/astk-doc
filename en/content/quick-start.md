@@ -10,7 +10,7 @@ In this tutorial, we introduce how to utilize **ASTK** to rapidly perform differ
 
 [Genome annotation](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/gencode.vM25.annotation.gtf.gz) (GENCODE, mouse, release_M25) is also required for alternative splicing event inference.
 
-[Genome fasta](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/gencode.vM25.annotation.gtf.gz) (GENCODE, mouse, release_M25) is also required for subsequent analyses, but not in the quick start tutorial.
+[Genome fasta](https://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_mouse/release_M25/GRCm38.primary_assembly.genome.fa.gz) (GENCODE, mouse, release_M25) is also required for subsequent analyses, but not in the quick start tutorial.
 
 The following is the quantification data:
 
